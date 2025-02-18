@@ -94,7 +94,7 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
 title: "My Webpage" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logos/Logo.png" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/logos/logocoffee.png" # Site logo, also used in jekyll-seo-tag
 description: "Awesome" # Site description and default description, also used in jekyll-seo-tag
 url: "https://weiran-sun.github.io/main1" # Site url, also used in jekyll-seo-tag
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
