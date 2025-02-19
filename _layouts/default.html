@@ -48,12 +48,6 @@
   <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
     {% include site-icons.svg %}
 
-    {% if page.feature_image %}
-  <div class="feature">
-    <img src="{{ page.feature_image }}" alt="{{ page.title }}">
-  </div>
-{% endif %}
-
     {{ content }}
 
     {% if site.service_worker != false %}{% include site-sw.html %}{% endif %}
