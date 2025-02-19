@@ -12,9 +12,13 @@ I am a Professor in the Mathematics Department of the Simon Fraser University.
 
 ## News
 
+<small>A small element</small>
+
+[A link](https://david.darn.es "A link")
+
 - Just submitted (Feb 2025):
 
-  **PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs**, M. Soroco, J. Song, M. Xia*, K. Emond*, W. Sun and W. Chen, submitted, 2025
+  [**PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs**](https://arxiv.org/abs/2502.00963), M. Soroco, J. Song, M. Xia*, K. Emond*, W. Sun and W. Chen, submitted, 2025
   
 - Just submitted (Jan 2025):
 
