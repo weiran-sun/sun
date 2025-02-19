@@ -12,7 +12,6 @@ I am a Professor in the Mathematics Department of the Simon Fraser University.
 
 ## News
 
-- Available as a **theme gem** and **GitHub Pages** theme
 - Just submitted (Feb 2025):
 
   **PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs**, M. Soroco, J. Song, M. Xia*, K. Emond*, W. Sun and W. Chen, submitted, 2025
