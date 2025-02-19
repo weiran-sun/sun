@@ -41,3 +41,5 @@ I am a Professor in the Mathematics Department of the Simon Fraser University.
 - July 2025:
 
 - Aug-Dec 2025:
+
+<small>(Feature image: Sunset outside the SFU Math department)</small>
