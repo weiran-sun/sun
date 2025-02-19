@@ -42,4 +42,4 @@ I am a Professor in the Mathematics Department of the Simon Fraser University.
 
 - Aug-Dec 2025:
 
-<it><sub>(Feature image: [Sunset outside the SFU Math department](https://weiran-sun.github.io/main1/assets/images/Math-Sunset.png))</sub></it>
+<sub>(Feature image: [Sunset outside the SFU Math department](https://weiran-sun.github.io/main1/assets/images/Math-Sunset.png))</sub>
