@@ -13,9 +13,9 @@ I am a Professor in the Mathematics Department of the Simon Fraser University.
 ## News
 
 
-- Just submitted (Feb 2025):
+- <i>Just submitted (Feb 2025)</i>:
 
-  [PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs](https://arxiv.org/abs/2502.00963), M. Soroco, J. Song, M. Xia, K. Emond, W. Sun and W. Chen, submitted, 2025
+  <small>[PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs](https://arxiv.org/abs/2502.00963), M. Soroco, J. Song, M. Xia, K. Emond, W. Sun and W. Chen, submitted, 2025.</small>
   
 - Just submitted (Jan 2025):
 
