@@ -6,28 +6,28 @@ feature_image: "https://weiran-sun.github.io/main1/assets/images/Math-Sunset.png
 excerpt: "ab"
 ---
 
-## About me
+### About me
 
 I am a Professor in the Mathematics Department of the Simon Fraser University.
 
-## News
+### News
 
 
 - <i>Just submitted (Feb 2025)</i>:
 
-  <small>[PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs](https://arxiv.org/abs/2502.00963)
+  <small>[PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs](https://arxiv.org/abs/2502.00963)</small>
 
-  M. Soroco, J. Song, M. Xia, K. Emond, W. Sun and W. Chen, submitted, 2025.</small>
+  <small>M. Soroco, J. Song, M. Xia, K. Emond, W. Sun and W. Chen, submitted, 2025.</small>
   
 - <i>Just submitted (Jan 2025)</i>:
 
-  <small>[Crossover from ballistic transport to normal diffusion: a kinetic view](https://arxiv.org/abs/2501.02240)
+  <small>[Crossover from ballistic transport to normal diffusion: a kinetic view](https://arxiv.org/abs/2501.02240)</small>
 
-  Z. Xue, W. Sun, Z. Zhou and M. Tang, submitted, 2025.</small>
+  <small>Z. Xue, W. Sun, Z. Zhou and M. Tang, submitted, 2025.</small>
 
 - <i>**Congratulations to Kye Emond**</i>!
 
-  <small>Kye just won the President's Award for Student Posters at the [2024 CMS Winter Meeting](https://cmssmc.wixsite.com/2024-cms-winter-meet/) in Richmond, BC! (See the announcement [here](https://www.sfu.ca/math/events-news/news/2024-news/2024-CMS-Presidents-Award.html))</small>
+  <small>Kye just won the President's Award for Student Posters at the 2024 CMS Winter Meeting in Richmond, BC! (See the announcement [here](https://www.sfu.ca/math/events-news/news/2024-news/2024-CMS-Presidents-Award.html))</small>
   
 - <i>Just published</i>:
   
