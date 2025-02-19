@@ -3,7 +3,6 @@ title: Elements
 feature_text: |
 feature_image: "https://weiran-sun.github.io/main1/assets/images/Office.png"
 excerpt: "A demo of Markdown and HTML includes"
-aside: true
 ---
 
 # Heading 1
