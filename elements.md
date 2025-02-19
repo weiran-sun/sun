@@ -2,7 +2,7 @@
 title: Elements
 feature_text: |
   A demo of Markdown and HTML includes
-feature_image: "/assets/logos/BC-Ferry.png"
+feature_image: "/assets/logos/BC-Ferry.jpg"
 excerpt: "A demo of Markdown and HTML includes"
 aside: true
 ---
