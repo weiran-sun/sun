@@ -1,1 +1,9 @@
-
+.feature {
+  background-size: cover;
+  background-position: center;
+  min-height: 400px; /* Ensures the feature image appears */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
