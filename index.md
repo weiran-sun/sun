@@ -2,7 +2,7 @@
 title:
 feature_text: |
   ## Weiran Sun
-image: "/assets/images/Office.png"
+feature_image: "/assets/images/Office.png"
 excerpt: "ab"
 ---
 
