@@ -12,6 +12,9 @@ I am a Professor in the Mathematics Department of the Simon Fraser University.
 
 ### News
 
+- <i> Conference organization (Oct 2025) </i>:
+
+  <small> The organization of the 5th SIAM PNW Biennial Meeting is ongoing. Visit [this webpage](https://sites.google.com/view/2025siampnwconference/home) for updates!</small>
 
 - <i>Just submitted (Feb 2025)</i>:
 
@@ -36,10 +39,10 @@ I am a Professor in the Mathematics Department of the Simon Fraser University.
 
 ### Upcoming trips
 
-- <small>April 14-18 2025: Integro-differential equations in many-particle interacting systems [Link(https://aimath.org/workshops/upcoming/manyparticle/)], Pasadena, CA </small> <small>(on hold, waiting for further notification)</small>
+- <small>April 14-18 2025: Integro-differential equations in many-particle interacting systems [Link](https://aimath.org/workshops/upcoming/manyparticle/), Pasadena, CA </small> <small>(on hold, waiting for further notification)</small>
 
 - <small>July 20-25 2025: The International Conference on emerging aspects of kinetic theory, nonlocal equations, and related applications,Wuhan, China </small>
 
-- <small>Aug 18-Dec 19 2025: Kinetic Theory: Novel Statistical, Stochastic and Analytical Methods [Link(https://www.slmath.org/programs/357)]</small> <small>(on hold, waiting for further notification)</small>
+- <small>Aug 18-Dec 19 2025: Kinetic Theory: Novel Statistical, Stochastic and Analytical Methods [Link](https://www.slmath.org/programs/357)</small> <small>(on hold, waiting for further notification)</small>
 
 (<sub><it>Feature image: [Sunset outside the SFU Math department](https://weiran-sun.github.io/main1/assets/images/Math-Sunset.png)</it></sub>)
