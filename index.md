@@ -36,10 +36,10 @@ I am a Professor in the Mathematics Department of the Simon Fraser University.
 
 ### Upcoming trips
 
-- April 2025:
+- <small>April 14-18 2025: Integro-differential equations in many-particle interacting systems [Link(https://aimath.org/workshops/upcoming/manyparticle/)]</small> <small>(on hold, waiting for notification)</small>
 
-- July 2025:
+- <small>July 2025:</small>
 
-- Aug-Dec 2025:
+- <small>Aug-Dec 2025:</small>
 
 (<sub><it>Feature image: [Sunset outside the SFU Math department](https://weiran-sun.github.io/main1/assets/images/Math-Sunset.png)</it></sub>)
