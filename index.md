@@ -34,7 +34,7 @@ I am a Professor in the Mathematics Department of the Simon Fraser University.
   <small>[Uniform error estimate of an asymptotic preserving scheme for the Levy-Fokker-Planck equation](https://arxiv.org/abs/2208.12302)
   W. Sun and L. Wang, Math. Comp. 94, 681-725, 2025.</small>
 
-## Upcoming trips
+### Upcoming trips
 
 - April 2025:
 
@@ -42,4 +42,4 @@ I am a Professor in the Mathematics Department of the Simon Fraser University.
 
 - Aug-Dec 2025:
 
-<sub>(Feature image: [Sunset outside the SFU Math department](https://weiran-sun.github.io/main1/assets/images/Math-Sunset.png))</sub>
+(<sub><it>Feature image: [Sunset outside the SFU Math department](https://weiran-sun.github.io/main1/assets/images/Math-Sunset.png)</it></sub>)
