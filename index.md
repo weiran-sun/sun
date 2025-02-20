@@ -47,4 +47,4 @@ I also enjoy working with researchers in other areas and provide mathematical te
 
 - <small>April 14-18 2025: Integro-differential equations in many-particle interacting systems [Link](https://aimath.org/workshops/upcoming/manyparticle/), Pasadena, CA </small> <small>(on hold, waiting for further notification)</small>
 
-<small><em>Feature image: [Sunset outside the SFU Math department](https://weiran-sun.github.io/main1/assets/images/Math-Sunset.png)</em></small>  
+<sub><em>Feature image: [Sunset outside the SFU Math department](https://weiran-sun.github.io/main1/assets/images/Math-Sunset.png)</em></sub>  
