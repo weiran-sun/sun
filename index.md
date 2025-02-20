@@ -43,6 +43,6 @@ I am a Professor in the Mathematics Department of the Simon Fraser University.
 
 - <small>July 20-25 2025: The International Conference on emerging aspects of kinetic theory, nonlocal equations, and related applications,Wuhan, China </small>
 
-- <small>Aug 18-Dec 19 2025: Kinetic Theory: Novel Statistical, Stochastic and Analytical Methods [Link](https://www.slmath.org/programs/357)</small> <small>(on hold, waiting for further notification)</small>
+- <small>Aug 18-Dec 19 2025: Kinetic Theory: Novel Statistical, Stochastic and Analytical Methods [Link](https://www.slmath.org/programs/357), SLMath (former MSRI), Berkeley, CA</small> <small>(on hold, waiting for further notification)</small>
 
-(<sub><it>Feature image: [Sunset outside the SFU Math department](https://weiran-sun.github.io/main1/assets/images/Math-Sunset.png)</it></sub>)
+(<sub>_Feature image: [Sunset outside the SFU Math department](https://weiran-sun.github.io/main1/assets/images/Math-Sunset.png)_</sub>)
