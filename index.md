@@ -11,7 +11,7 @@ excerpt: "ab"
 I am a Professor in the Mathematics Department of the Simon Fraser University. My research area is PDE and applied analysis with the main focus on the kinetic theory. Current specific topics that I am interested in include: 
   - Analysis of kinetic equations
   - Inverse problems related to kinetic equations and related ones
-  - Numerical analysis of kinetic equations  
+  - Numerical analysis of kinetic equations <br>
 I also enjoy working with researchers in other areas and provide mathematical tech support. Recently, I become increasingly interested in AI-for-Math and start working with computer scientists (the [DeLTA Lab](https://delta-lab-ai.github.io/index.html) led by Professor Wuyang Chen at SFU) on automating PDE analysis. 
 
 ### News
