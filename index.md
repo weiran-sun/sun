@@ -12,6 +12,7 @@ I am a Professor in the Mathematics Department of the Simon Fraser University. M
  - Analysis of kinetic equations
  - Inverse problems related to kinetic equations and related ones
  - Numerical analysis of kinetic equations
+
 I also enjoy working with researchers in other areas and provide mathematical tech support. Recently, I become increasingly interested in AI-for-Math and start working with computer scientists (the DeLTA Lab led by Professor [Wuyang Chen](https://delta-lab-ai.github.io/index.html) at SFU) on automating PDE analysis. 
 
 ### News
