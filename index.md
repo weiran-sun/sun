@@ -36,8 +36,8 @@ I also enjoy working with researchers in other areas and providing mathematical 
   
 - <i>Just published</i>:
   
-  <small>[Uniform error estimate of an asymptotic preserving scheme for the Levy-Fokker-Planck equation](https://arxiv.org/abs/2208.12302)
-  W. Sun and L. Wang, Math. Comp. 94, 681-725, 2025.</small>
+  <small>[Uniform error estimate of an asymptotic preserving scheme for the Levy-Fokker-Planck equation](https://www.ams.org/journals/mcom/2025-94-352/S0025-5718-2024-03975-3/home.html)
+  W. Sun and L. Wang, Math. Comp. 94, 681-725, 2025.</small> <small>[arXiv Link](https://arxiv.org/abs/2208.12302)</small>
 
 ### Upcoming trips
 
