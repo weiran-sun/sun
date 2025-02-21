@@ -11,16 +11,16 @@
 
 # 1. Files excluded from Jekyll builds
 exclude:
-  - README.md
-  - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
-  - screenshot.png
-  - LICENSE
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - alembic-jekyll-theme.gemspec
-  - .jekyll-cache
+- README.md
+- CODE_OF_CONDUCT.md
+- CONTRIBUTING.md
+- screenshot.png
+- LICENSE
+- CNAME
+- Gemfile
+- Gemfile.lock
+- alembic-jekyll-theme.gemspec
+- .jekyll-cache
 
 # 2. Installed Gems
 plugins:
@@ -106,9 +106,7 @@ url: "https://weiran-sun.github.io/sun" # Site url, also used in jekyll-seo-tag
 css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 
 # 8. Site favicons & manifest icons
-favicons: 
-  default: "/assets/logos/logocoffee.png" # Favicons are also used in the manifest file. Syntax is 'size: path'
-  sizes:
+favicons: '/assets/logos/logocoffee.png' # Favicons are also used in the manifest file. Syntax is 'size: path'
     16: "/assets/logos/logo@16px.png"
     32: "/assets/logos/logo@32px.png"
     96: "/assets/logos/logo@96px.png"
