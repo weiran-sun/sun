@@ -121,13 +121,13 @@ navigation_header:
 - title: Home
   url: /
 - title: Publication
-  url: /elements/
+  url: /Publication/
 - title: Group
-  url: /blog/
+  url: /group/
 - title: CV
-  url: /categories/
+  url: /CV/
 - title: Contact
-  url: /search/
+  url: /Contact/
 
 
 navigation_footer:
