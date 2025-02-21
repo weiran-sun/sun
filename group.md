@@ -8,7 +8,7 @@ excerpt: "Research Group"
 ### Current students
 
 - PhD students
-  - Kshtij Patil (co-supervised with Nilima Nigam)
+  - Kshitij Patil (co-supervised with Nilima Nigam)
   - Matt Spragge
 - MSc students
   - Chenny Chen (co-supervised with Xiaoqiong Joan Hu)
