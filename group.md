@@ -13,7 +13,7 @@ excerpt: "Research Group"
 - MSc students
   - Chenny Chen, 2024-present (co-supervisor)
   - Yuxuan Mao, 2024-present (co-supervisor)
-- Undergraduate student
+- Undergraduate research assistant
   - Kye Emond, 2024-present
   
 
