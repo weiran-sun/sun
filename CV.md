@@ -1,7 +1,7 @@
 ---
 title: CV
 feature_text: |
-feature_image: "https://weiran-sun.github.io/main1/assets/images/Office.png"
+feature_image: "https://weiran-sun.github.io/main1/assets/images/Trottier.jpg"
 excerpt: "CV"
 ---
 
