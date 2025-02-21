@@ -18,3 +18,6 @@ excerpt: "Research Group"
   
 
 ### Past students
+
+
+<small><em>feature image: [Sunset view on BC ferry from Vancouer Island](https://weiran-sun.github.io/main1/assets/images/BC-Ferry.jpg)</em></small>
