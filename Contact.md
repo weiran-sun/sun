@@ -6,7 +6,7 @@ feature_image: ""
 excerpt: "Contact"
 ---
 
-### Address
+### Mailing address
 
 8888 University Dr.   
 Department of Mathematics  
