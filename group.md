@@ -8,11 +8,11 @@ excerpt: "Research Group"
 ### Current students
 
 - PhD students
-  - Kshtij Patil (co-supervised with Professor Nilima Nigam)
+  - Kshtij Patil (co-supervised with Nilima Nigam)
   - Matt Spragge
 - MSc students
-  - Chenny Chen (co-supervised with Professor Xiaoqiong Joan Hu)
-  - Yuxuan Mao (co-supervised with Professor Razvan Fetecau)
+  - Chenny Chen (co-supervised with Xiaoqiong Joan Hu)
+  - Yuxuan Mao (co-supervised with Razvan Fetecau)
 - Undergraduate student
   - Kye Emond
   
