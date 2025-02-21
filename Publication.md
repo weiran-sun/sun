@@ -78,4 +78,5 @@ My papers and preprints can be found on [arXiv](https://arxiv.org/search/?query=
 
 
 
-<small><em>Feature image: [my office with peonies from a colleague's backyard](https://weiran-sun.github.io/main1/assets/images/Office.png)</em></small>
+<small><em>Feature image: [My office with peonies from a colleague's backyard](https://weiran-sun.github.io/main1/assets/images/Office.png)</em></small>
+<small><em>Logo: [My best latte art to date]()
