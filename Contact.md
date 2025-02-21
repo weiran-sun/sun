@@ -7,7 +7,7 @@ excerpt: "Contact"
 
 ### Address
 
-8888 University Dr. 
-Department of Mathematics
-Simon Fraser University
+8888 University Dr.   
+Department of Mathematics  
+Simon Fraser University  
 Burnaby, BC, Canada
