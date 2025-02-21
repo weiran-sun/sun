@@ -16,7 +16,7 @@ I also enjoy working with researchers in other disciplines and providing mathema
 
 - <i> Conference organization (Oct 2025) </i>:
 
-  <small> The organization of the 5th SIAM PNW Biennial Meeting is ongoing. Visit [this webpage](https://sites.google.com/view/2025siampnwconference/home) for updates!</small>
+  <small> The organization of the 5th SIAM Pacific Northwest Section (PNWS) Biennial Meeting is ongoing. Visit [this webpage](https://sites.google.com/view/2025siampnwconference/home) for updates!</small>
 
 - <i>Just submitted (Feb 2025)</i>:
 
