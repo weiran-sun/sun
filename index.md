@@ -2,7 +2,7 @@
 title:
 feature_text: |
   ## Weiran Sun
-feature_image: "https://weiran-sun.github.io/main/assets/images/Math-Sunset.png"
+feature_image: "https://weiran-sun.github.io/sun/assets/images/Math-Sunset.png"
 excerpt: "ab"
 ---
 
