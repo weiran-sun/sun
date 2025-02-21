@@ -1,13 +1,12 @@
 ---
 title: CV
 feature_text: |
+  ### Short Bio
 feature_image: "https://weiran-sun.github.io/main1/assets/images/Trottier.jpg"
 excerpt: "CV"
 ---
 
-### Short Bio
-
-#### Academic Position
+##### Academic Position
 - Simon Fraser University, Burnaby, BC, Canada
   - Professor, Department of Mathematics, 2024-present
   - Associate Professor, Department of Mathematics, 2018-2024
@@ -19,7 +18,7 @@ excerpt: "CV"
   - Postdoctoral Fellow, Department of Mathematics, 2008-2009  
     Supervisor: Konstantina Trivisa
     
-#### Education
+##### Education
 - University of Maryland, College Park, Maryland, USA, 2008
   - Ph.D., Applied Mathematics and Scientific Computation (AMSC)  
     Advisor: C. David Levermore
