@@ -1,7 +1,7 @@
 ---
 title: Research Group
 feature_text: |
-feature_image: "https://weiran-sun.github.io/main1/assets/images/BC-Ferry.jpg"
+feature_image: "https://weiran-sun.github.io/sun/assets/images/BC-Ferry.jpg"
 excerpt: "Research Group"
 ---
 
@@ -46,4 +46,4 @@ excerpt: "Research Group"
   - Ragini Singhal (MITACS), Summer 2014
 
 
-<small><em>feature image: [Sunset view on BC ferry from Vancouver Island](https://weiran-sun.github.io/main1/assets/images/BC-Ferry.jpg)</em></small>
+<small><em>feature image: [Sunset view on BC ferry from Vancouver Island](https://weiran-sun.github.io/sun/assets/images/BC-Ferry.jpg)</em></small>
