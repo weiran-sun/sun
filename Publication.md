@@ -12,39 +12,39 @@ My papers and preprints can be found on [arXiv](https://arxiv.org/search/?query=
 ### List of Publications 
 
 <small><em>Student or postdoctoral co-authors are indicated by an asterisk.</em></small>
-- <small>PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs , M. Soroco**, J. Song**, M. Xia*, K. Emond*, W. Sun and W. Chen, submitted, 2025. (**: Equal Contribution)</small>  
+- <small>PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs , M. Soroco, J. Song, M. Xia\*, K. Emond\*, W. Sun and W. Chen, submitted, 2025. </small>  
 
-- <small>Crossover from ballistic transport to normal diffusion: a kinetic view, Z. Xue*, W. Sun, Z. Zhou and M. Tang, submitted, 2025.</small>  
+- <small>Crossover from ballistic transport to normal diffusion: a kinetic view, Z. Xue\*, W. Sun, Z. Zhou and M. Tang, submitted, 2025.</small>  
 
 - <small>Uniform error estimate of an asymptotic preserving scheme for the Levy-Fokker-Planck equation, W. Sun and L. Wang, Math. Comp. 94, 681-725, 2025.</small>  
 
-- <small>Pickleball Flight Dynamics, K. Emond*, W. Sun and T. Swartz, International Journal of Racket Sports Science, 6(2), 1-8, 2025.</small>  
+- <small>Pickleball Flight Dynamics, K. Emond\*, W. Sun and T. Swartz, International Journal of Racket Sports Science, 6(2), 1-8, 2025.</small>  
 
 - <small>Reconstruction of the Doping Profile in Vlasov-Poisson, R.-Y. Lai, Q. Li and W. Sun, Inverse Problems 40, 2024.</small>  
 
 - <small>De Giorgi argument for weighted L2 \cap L^\infty solutions to the non-cutoff Boltzmann equation, R. Alonso, Y. Morimoto, W. Sun, T. Yang, J. Stat. Phys. 190, 38, 2023.</small>  
 
-- <small>Second-order diffusion limit for the phonon transport equation -- asymptotics and numerics, A. Nair*, Q. Li, W. Sun, Partial Differ. Equ. Appl. 3, 38, 2022.</small> 
+- <small>Second-order diffusion limit for the phonon transport equation -- asymptotics and numerics, A. Nair\*, Q. Li, W. Sun, Partial Differ. Equ. Appl. 3, 38, 2022.</small> 
 
 - <small>Unique reconstruction of the heat-reflection indices at solid interfaces, Q. Li and W. Sun, SIAM J. Math. Anal. 54, 5742-5759, 2022.</small> 
 
-- <small>Zero-Diffusion Limit for Aggregation Equations Over Bounded Domains, R. Fetecau, H. Huang*, D. Messenger*, W. Sun, Discrete Continuous Dyn. Syst. 42, 4905-4936, 2022.</small> 
+- <small>Zero-Diffusion Limit for Aggregation Equations Over Bounded Domains, R. Fetecau, H. Huang\*, D. Messenger\*, W. Sun, Discrete Continuous Dyn. Syst. 42, 4905-4936, 2022.</small> 
 
 - <small>Multiple Asymptotics of Kinetic Equations with Internal States, B. Perthame, W. Sun, M. Tang, and S. Yasuda, Math. Models Methods Appl. Sci. 30, 1041-1073, 2020.</small> 
 
 - <small>Applications of Kinetic Tools to Inverse Transport Problems, Q. Li and W. Sun, Inverse Problems 36, 2020.</small> 
 
-- <small>Uniqueness Of Solutions To A Gas-Disk Interaction System, A. Iatcenko* and W. Sun, Arch. Ration. Mech. Anal. 235, 2027–2053, 2020.</small> 
+- <small>Uniqueness Of Solutions To A Gas-Disk Interaction System, A. Iatcenko\* and W. Sun, Arch. Ration. Mech. Anal. 235, 2027–2053, 2020.</small> 
 
 - <small>Non-Cutoff Boltzmann Equation with Polynomial Decay Perturbation, R. Alonso, Y. Morimoto, W. Sun, and T. Yang, Revista Matematica Iberoamericana 37, 189–292, 2020.</small> 
 
-- <small>Propagation of Chaos for the Keller-Segel Equation Over Bounded Domains, R. Fetecau, H. Huang*, W. Sun, J. Differ. Equations 266, 2142-2174, 2019.</small>  
+- <small>Propagation of Chaos for the Keller-Segel Equation Over Bounded Domains, R. Fetecau, H. Huang\*, W. Sun, J. Differ. Equations 266, 2142-2174, 2019.</small>  
 
 - <small>The Fractional Diffusion Limit of a Kinetic Model with Biochemical Pathway, B. Perthame, W. Sun and M. Tang, Z. Angew. Math. Phys. 69:67, 2018.</small> 
 
 - <small>Fractional Diffusion Limits of Non-classical Transport Equations , M. Frank and W. Sun, Kinetic and Related Models 11, 1503-1526, 2018.</small> 
 
-- <small>Small inertia regularization of an anisotropic aggregation model , J. Evers*, R. Fetecau, W. Sun, Math. Models Methods Appl. Sci. 27, 1795-1842, 2017.</small> 
+- <small>Small inertia regularization of an anisotropic aggregation model , J. Evers\*, R. Fetecau, W. Sun, Math. Models Methods Appl. Sci. 27, 1795-1842, 2017.</small> 
 
 - <small>Macroscopic Limits of pathway-based kinetic models for E.coli chemotaxis in large gradient environments , W. Sun and M. Tang, Multi. Model. Simul. 15, 797–826, 2017.</small> 
 
