@@ -23,7 +23,7 @@ excerpt: "CV"
   - Ph.D., Applied Mathematics and Scientific Computation (AMSC)  
     Advisor: C. David Levermore
 - <em>University of Science and Technology of China, Hefei, Anhui, China,<em> 2001  
-  - B.S., Mathematics and Applied Mathematics
+  - B.S., Department of Mathematics and Applied Mathematics
 
 
 <small><em>Feature image: [View of the SFU Trottier Observatory from Math](https://weiran-sun.github.io/sun/assets/images/Trottier.jpg)</em></small>
