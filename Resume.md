@@ -26,4 +26,4 @@ excerpt: "CV"
   - B.S., Mathematics and Applied Mathematics
 
 
-<small><em>Feature image: [View of the SFU Trottier Observatory from Math](https://weiran-sun.github.io/main1/assets/images/Trottier.jpg)</em></small>
+<small><em>Feature image: [View of the SFU Trottier Observatory from Math](https://weiran-sun.github.io/sun/assets/images/Trottier.jpg)</em></small>
