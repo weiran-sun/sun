@@ -12,7 +12,6 @@ The username is **weiran_sun** and the domain is **sfu.ca**.
 
 ### Mailing address
 
-Department of Mathematics
 8888 University Dr.   
 Department of Mathematics  
 Simon Fraser University  
