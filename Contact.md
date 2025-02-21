@@ -12,3 +12,7 @@ excerpt: "Contact"
 Department of Mathematics  
 Simon Fraser University  
 Burnaby, BC, Canada
+
+### Email
+
+The username is weiran_sun and the domain is sfu.ca.
