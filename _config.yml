@@ -131,7 +131,7 @@ navigation_header:
 
 
 navigation_footer:
-  - title: Simon Fraser University
+- title: Simon Fraser University
   url: https://www.sfu.ca
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
