@@ -6,3 +6,7 @@ excerpt: "CV"
 ---
 
 ### Short Bio
+
+
+
+<small><em>Feature image: View of the SFU Trottier Observatory from Math</em></small>
