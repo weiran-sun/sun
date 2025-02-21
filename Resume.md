@@ -21,9 +21,9 @@ excerpt: "CV"
     
 #### Education
 - University of Maryland, College Park, Maryland, USA, 2008
-  - Ph.D., Applied Mathematics and Scientific Computation (AMSC)
+  - Ph.D., Applied Mathematics and Scientific Computation (AMSC) \br
     Advisor: C. David Levermore
-- University of Science and Technology of China, Hefei, Anhui, China,2001
+- University of Science and Technology of China, Hefei, Anhui, China,2001 \br
   - B.S., Mathematics and Applied Mathematics
 
 
