@@ -1,6 +1,7 @@
 ---
 title: Contact
 feature_text: |
+  ### Contact Card
 feature_image: ""
 excerpt: "Contact"
 ---
