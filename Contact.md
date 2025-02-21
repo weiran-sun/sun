@@ -15,4 +15,4 @@ Burnaby, BC, Canada
 
 ### Email
 
-The username is weiran_sun and the domain is sfu.ca.
+The username is weiran_sun and the domain is sfu.ca. 
