@@ -74,7 +74,7 @@ My papers and preprints can be found on [arXiv](https://arxiv.org/search/?query=
 
 - <small>Local well-posedness of a dispersive system beyond Navier-Stokes, C. D. Levermore and W. Sun, Indiana Univ. Math. J. 60, no. 2, 517–576, 2011.</small> 
 
-- <small>Compactness of the gain part of the linearized Boltzmann operator with weakly cutoff kernels , C. D. Levermore and W. Sun, Kinetic and Related Models, Vol 3, Issue 2, 335-351.</small> 
+- <small>Compactness of the gain part of the linearized Boltzmann operator with weakly cutoff kernels , C. D. Levermore and W. Sun, Kinetic and Related Models, Vol 3, Issue 2, 335-351.</small>  
 
 
 
