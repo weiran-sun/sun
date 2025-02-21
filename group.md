@@ -8,25 +8,42 @@ excerpt: "Research Group"
 ### Current supervision
 
 - PhD students
-  - Kshitij Patil (co-supervised with Nilima Nigam)
-  - Matt Spragge
+  - Kshitij Patil, 2024-present (co-supervisor)
+  - Matt Spragge, 2022-present
 - MSc students
-  - Chenny Chen (co-supervised with Xiaoqiong Joan Hu)
-  - Yuxuan Mao (co-supervised with Razvan Fetecau)
+  - Chenny Chen, 2024-present (co-supervisor)
+  - Yuxuan Mao, 2024-present (co-supervisor)
 - Undergraduate student
-  - Kye Emond
+  - Kye Emond, 2024-present
   
 
 ### Past supervision
 
 - Postdoc
-  - Hui Huang (co-supervised with Razvan Fetecau)
+  - Hui Huang, 2017-2019 (co-supervisor)
 - MSc students
-  - Matt Spragge
-  - Javier Almonacid (co-supervised with Nilima Nigam)
-  - Anton Iatcenko (co-supervised with Ralf Wittenberg)
-  - Hans Oeri (co-supervised with Ralf Wittenberg)
+  - Matt Spragge, 2020-2022
+  - Javier Almonacid, 2018-2020 (co-supervisor)
+  - Anton Iatcenko, 2017-2019 (senior supervisor)
+  - Hans Oeri, 2016-2018 (co-supervisor)
+  - Xinyi Wang, 2014-2016 (co-supervisor)
 - Undergraduate students (USRA/VPR)
+  - Kye Emond (USRA), Summer 2024
+  - Grayson Davis (USRA), Summer 2024
+  - Jacques Van Dyk (USRA), Summer 2021
+  - Hunt Feng (VPR), Summer 2020
+  - Zenith (Robert) Yudovich (VPR), Summer 2020
+  - Beril Zhang (VPR), Summer 2017 (co-supervisor)
+  - Ningxin Wei (VPR), Summer 2016 (co-supervisor)
+  - Darshan Crout (USRA), Summer 2014 (co-supervisor)
+  - Warren Tennant (USRA), Summer 2013 (co-supervisor)
+- Visiting students
+  - Patricio Ignacio Asenjo Torres, Spring 2023
+  - Catalina Fernanda Opazo Obregon, Spring 2023
+  - Javier Almonacid, Spring 2017
+  - Yici Yan (MITACS), Summer 2016
+  - Fangju Hu, Fall 2015-Fall 2016
+  - Ragini Singhal (MITACS), Summer 2014
 
 
 <small><em>feature image: [Sunset view on BC ferry from Vancouver Island](https://weiran-sun.github.io/main1/assets/images/BC-Ferry.jpg)</em></small>
