@@ -2,7 +2,7 @@
 title: CV
 feature_text: |
   ### Short Bio
-feature_image: "https://weiran-sun.github.io/main1/assets/images/Trottier.jpg"
+feature_image: "https://weiran-sun.github.io/sun/assets/images/Trottier.jpg"
 excerpt: "CV"
 ---
 
