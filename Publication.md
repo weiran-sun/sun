@@ -22,7 +22,7 @@ My papers and preprints can be found on [arXiv](https://arxiv.org/search/?query=
 
 - <small>Reconstruction of the Doping Profile in Vlasov-Poisson, R.-Y. Lai, Q. Li and W. Sun, Inverse Problems 40, 2024.</small>  
 
-- <small>De Giorgi argument for weighted L2 \cap L^\infty solutions to the non-cutoff Boltzmann equation, R. Alonso, Y. Morimoto, W. Sun, T. Yang, J. Stat. Phys. 190, 38, 2023.</small>  
+- <small>De Giorgi argument for weighted $L2 \cap L^\infty$ solutions to the non-cutoff Boltzmann equation, R. Alonso, Y. Morimoto, W. Sun, T. Yang, J. Stat. Phys. 190, 38, 2023.</small>  
 
 - <small>Second-order diffusion limit for the phonon transport equation -- asymptotics and numerics, A. Nair\*, Q. Li, W. Sun, Partial Differ. Equ. Appl. 3, 38, 2022.</small> 
 
