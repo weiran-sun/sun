@@ -11,11 +11,11 @@ excerpt: "CV"
   - Professor, Department of Mathematics, 2024-present
   - Associate Professor, Department of Mathematics, 2018-2024
   - Assistant Professor, Department of Mathematics, 2012-2018
-- <em>University of Chicago, Chicago, Illinois, USA<em>
-  - L.E. Dickson Instructor, Department of Mathematics, 2009-2012  
+- <em>University of Chicago, Chicago, Illinois, USA,2009-2012<em>
+  - L.E. Dickson Instructor, Department of Mathematics    
     Supervisor: Peter Constantin
-- <em>University of Maryland, College Park, Maryland, USA<em>
-  - Postdoctoral Fellow, Department of Mathematics, 2008-2009  
+- <em>University of Maryland, College Park, Maryland, USA, 2008-2009<em>
+  - Postdoctoral Fellow, Department of Mathematics    
     Supervisor: Konstantina Trivisa
     
 ##### Education
