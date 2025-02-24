@@ -45,6 +45,6 @@ I also enjoy working with researchers in other disciplines and providing mathema
 
 - <small>July 20-25 2025: The International Conference on emerging aspects of kinetic theory, nonlocal equations, and related applications, Wuhan, China </small>
 
-- <small>April 14-18 2025: Integro-differential equations in many-particle interacting systems [Link](https://aimath.org/workshops/upcoming/manyparticle/), Pasadena, CA </small> <small>(on hold, waiting for further notice)</small>
+- <small>April 14-18 2025: Integro-differential equations in many-particle interacting systems [Link](https://aimath.org/workshops/upcoming/manyparticle/), Pasadena, CA </small>
 
 <small><em>Feature image: [Sunset outside the SFU Math department](https://weiran-sun.github.io/sun/assets/images/Math-Sunset.png)</em></small>  
