@@ -41,7 +41,7 @@ I also enjoy working with researchers in other disciplines and providing mathema
 
 ### Upcoming trips
 
-- <small>Aug 18-Dec 19 2025: Kinetic Theory: Novel Statistical, Stochastic and Analytical Methods [Link](https://www.slmath.org/programs/357), SLMath (former MSRI), Berkeley, CA</small> <small>(on hold, waiting for further notice)</small>
+- <small>Aug 18-Dec 19 2025: Kinetic Theory: Novel Statistical, Stochastic and Analytical Methods [Link](https://www.slmath.org/programs/357), SLMath (former MSRI), Berkeley, CA</small>
 
 - <small>July 20-25 2025: The International Conference on emerging aspects of kinetic theory, nonlocal equations, and related applications, Wuhan, China </small>
 
