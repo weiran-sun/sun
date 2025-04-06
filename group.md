@@ -38,6 +38,7 @@ excerpt: "Research Group"
   - Darshan Crout (USRA), Summer 2014 (co-supervisor)
   - Warren Tennant (USRA), Summer 2013 (co-supervisor)
 - Visiting students
+  - Luciano Andrés Gajardo Chamblas, Spring 2024
   - Patricio Ignacio Asenjo Torres, Spring 2023
   - Catalina Fernanda Opazo Obregon, Spring 2023
   - Javier Almonacid, Spring 2017
