@@ -18,7 +18,7 @@ I also enjoy working with researchers in other disciplines and providing mathema
 
   <small> The organization of the 5th SIAM Pacific Northwest Section (PNWS) Biennial Meeting is ongoing. Visit [this webpage](https://sites.google.com/view/2025siampnwconference/home) for updates!</small>
 
-- <i>Just accepted (May 2025)</i>:
+- <i>Just accepted </i>:
 
   <small>[PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs](https://arxiv.org/abs/2502.00963)</small>
 
