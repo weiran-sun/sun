@@ -12,7 +12,7 @@ My papers and preprints can be found on [arXiv](https://arxiv.org/search/?query=
 ### List of publications
 
 <small><em>Student or postdoctoral co-authors are indicated by an asterisk.</em></small>
-1. <small>PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs , M. Soroco\*, J. Song\*, M. Xia\*, K. Emond\*, W. Sun and W. Chen, submitted, 2025. </small>  
+1. <small>PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs , M. Soroco\*, J. Song\*, M. Xia\*, K. Emond\*, W. Sun and W. Chen, accepted, ICML, 2025. </small>  
 
 1. <small>Crossover from ballistic transport to normal diffusion: a kinetic view, Z. Xue\*, W. Sun, Z. Zhou and M. Tang, submitted, 2025.</small>  
 
