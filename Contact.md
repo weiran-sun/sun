@@ -6,6 +6,8 @@ feature_image: ""
 excerpt: "Contact"
 ---
 
+### Office: SCK 10540
+
 ### Email
 
 The username is **weiran_sun** and the domain is **sfu.ca**. 
