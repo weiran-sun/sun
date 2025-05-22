@@ -14,6 +14,10 @@ I also enjoy working with researchers in other disciplines and providing mathema
 
 ### News
 
+- <i>**Congratulations to Kye Emond**</i>!
+
+  <small>Kye just won the Governor General’s Silver Medal, awarded to the two undergraduate students who achieve the highest scholastic standing upon graduation from a bachelor’s degree program. (See the announcement [here](https://www.sfu.ca/convocation/speakers-and-recipients/medal-recipients.html))</small>
+
 - <i> Conference organization (Oct 2025) </i>:
 
   <small> The organization of the 5th SIAM Pacific Northwest Section (PNWS) Biennial Meeting is ongoing. Visit [this webpage](https://sites.google.com/view/2025siampnwconference/home) for updates!</small>
