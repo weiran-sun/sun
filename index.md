@@ -14,6 +14,10 @@ I also enjoy working with researchers in other disciplines and providing mathema
 
 ### News
 
+- <i>Just submitted (July 2025) </i>:
+  <small>[The $mathcal{M}$-Operator and Uniqueness of Nonlinear Kinetic Equations](https://arxiv.org/abs/2506.20775) <small>
+  <small>R. Alonso, M.P. Gualdani and W. Sun, submitted, 2025.</small>
+
 - <i>**Congratulations to Kye Emond**</i>!
 
   <small>Kye just won the Governor General’s Silver Medal, awarded to the two undergraduate students who achieve the highest scholastic standing upon graduation from a bachelor’s degree program. (See the announcement [here](https://www.sfu.ca/convocation/speakers-and-recipients/medal-recipients.html))</small>
