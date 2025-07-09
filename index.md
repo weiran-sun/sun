@@ -17,6 +17,7 @@ I also enjoy working with researchers in other disciplines and providing mathema
 - <i>Just submitted (July 2025) </i>:
   
   <small>[The $mathcal{M}$-Operator and Uniqueness of Nonlinear Kinetic Equations](https://arxiv.org/abs/2506.20775) <small>
+  
   <small>R. Alonso, M.P. Gualdani and W. Sun, submitted, 2025.</small>
 
 - <i>**Congratulations to Kye Emond**</i>!
