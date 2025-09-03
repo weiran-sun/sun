@@ -40,10 +40,6 @@ I also enjoy working with researchers in other disciplines and providing mathema
 
   <small>Z. Xue, W. Sun, Z. Zhou and M. Tang, submitted, 2025.</small>
 
-- <i>**Congratulations to Kye Emond**</i>!
-
-  <small>Kye just won the President's Award for Student Posters at the 2024 CMS Winter Meeting in Richmond, BC! (See the announcement [here](https://www.sfu.ca/math/events-news/news/2024-news/2024-CMS-Presidents-Award.html))</small>
-  
 - <i>Just published</i>:
   
   <small>[Uniform error estimate of an asymptotic preserving scheme for the Levy-Fokker-Planck equation](https://www.ams.org/journals/mcom/2025-94-352/S0025-5718-2024-03975-3/home.html)
@@ -51,9 +47,9 @@ I also enjoy working with researchers in other disciplines and providing mathema
 
 ### Upcoming trips
 
-- <small>Aug 18-Dec 19 2025: Kinetic Theory: Novel Statistical, Stochastic and Analytical Methods [Link](https://www.slmath.org/programs/357), SLMath (former MSRI), Berkeley, CA</small>
+- <small>Oct 3-5 2025: the 5th biennial meeting of the Pacific Northwest Section of SIAM (SIAM PNWS), University of Washington, Seattle, WA</small>
 
-- <small>July 20-25 2025: The International Conference on emerging aspects of kinetic theory, nonlocal equations, and related applications [Link](https://tmcc.whu.edu.cn/info/1971/15361.htm), Wuhan, China </small>
+- <small>Aug 18-Dec 19 2025: Kinetic Theory: Novel Statistical, Stochastic and Analytical Methods [Link](https://www.slmath.org/programs/357), SLMath (former MSRI), Berkeley, CA</small>
 
 
 <small><em>Feature image: [Sunset outside the SFU Math department](https://weiran-sun.github.io/sun/assets/images/Math-Sunset.png)</em></small>  
