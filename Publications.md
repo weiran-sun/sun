@@ -10,7 +10,6 @@ excerpt: "List of Publications"
 My papers and preprints can be found on [arXiv](https://arxiv.org/search/?query=%22Weiran+Sun%22&searchtype=all&source=header) and [Google Scholar](https://scholar.google.com/citations?user=Kc3N_kQAAAAJ&hl=en).  
 
 ### List of publications
-
 <small><em>Student or postdoctoral co-authors are indicated by an asterisk.</em></small>
 1. <small>The spectrum of the Steklov-Helmholtz operator, N. Nigam, K. Patil\* and W. Sun, submitted, 2025. </small>
 
