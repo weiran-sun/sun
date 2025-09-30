@@ -14,6 +14,8 @@ I also enjoy working with researchers in other disciplines and providing mathema
 
 ### News
 
+- <i> **Recruting** (Sep 2025) </i>: I am looking for graudate students with a strong background in PDE analysis to work with me and Prof. Wuyang Chen on the formalization of PDEs. 
+  
 - <i>Just submitted (July 2025) </i>:
   
   <small>[The $mathcal{M}$-Operator and Uniqueness of Nonlinear Kinetic Equations](https://arxiv.org/abs/2506.20775) <small>
