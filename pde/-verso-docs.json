@@ -1,0 +1,738 @@
+{"99":
+ "<code class=\"docstring\">`classical tacs` runs `tacs` in a scope where `Classical.propDecidable` is a low priority\nlocal instance.\n\nNote that `classical` is a scoping tactic: it adds the instance only within the\nscope of the tactic.\n</code>",
+ "98":
+ "<code>Chapter7.hasDerivAt_c (α : ℝ) (hα : 0 &lt; α) {t : ℝ} (ht : 0 &lt; t) : HasDerivAt (fun τ =&gt; c α τ) (-(1 / (2 * t)) * c α t) t</code><span class=\"sep\"></span><code class=\"docstring\">Derivative of `c(t) = 1 / √( (4π) α t )` at `t`. 100% algebraic. </code>",
+ "97":
+ "<code>HasDerivAt.const_mul.{u, u_3} {𝕜 : Type u} [NontriviallyNormedField 𝕜] {x : 𝕜} {𝔸 : Type u_3} [NormedRing 𝔸]\n  [NormedAlgebra 𝕜 𝔸] {d : 𝕜 → 𝔸} {d' : 𝔸} (c : 𝔸) (hd : HasDerivAt d d' x) : HasDerivAt (fun y =&gt; c * d y) (c * d') x</code>",
+ "96":
+ "<code>hasDerivAt_inv.{u} {𝕜 : Type u} [NontriviallyNormedField 𝕜] {x : 𝕜} (x_ne_zero : x ≠ 0) :\n  HasDerivAt (fun y =&gt; y⁻¹) (-(x ^ 2)⁻¹) x</code>",
+ "95": "<code>HasDerivAt (fun τ =&gt; 1 / τ) (-(1 / t ^ 2)) t</code>",
+ "94": "<code>a α = fun τ =&gt; 1 / (4 * α) * (1 / τ)</code>",
+ "93": "<code>t ≠ 0</code>",
+ "92": "<code>α ≠ 0</code>",
+ "91":
+ "<code>HasDerivAt.{u, v} {𝕜 : Type u} [NontriviallyNormedField 𝕜] {F : Type v} [AddCommGroup F] [Module 𝕜 F]\n  [TopologicalSpace F] [ContinuousSMul 𝕜 F] (f : 𝕜 → F) (f' : F) (x : 𝕜) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`f` has the derivative `f'` at the point `x`.\n\nThat is, `f x' = f x + (x' - x) • f' + o(x' - x)` where `x'` converges to `x`.\n</code>",
+ "90":
+ "<code>Chapter7.hasDerivAt_a (α : ℝ) (hα : 0 &lt; α) {t : ℝ} (ht : 0 &lt; t) :\n  HasDerivAt (fun τ =&gt; a α τ) (-(1 / (4 * α)) * (1 / t ^ 2)) t</code><span class=\"sep\"></span><code class=\"docstring\">Derivative of `a(t) = 1/(4 α t)` at `t`. We keep it as a slope value. </code>",
+ "9":
+ "<code class=\"docstring\">The universe of propositions. `Prop ≡ Sort 0`.\n\nEvery proposition is propositionally equal to either `True` or `False`. </code>",
+ "89":
+ "<code>Chapter7.Φ_def (α x t : ℝ) : Φ α x t = c α t * Real.exp (-a α t * x ^ 2)</code>",
+ "88": "<code>Chapter7.c_def (α t : ℝ) : c α t = 1 / √(heatK α * t)</code>",
+ "87":
+ "<code>rfl.{u} {α : Sort u} {a : α} : a = a</code><span class=\"sep\"></span><code class=\"docstring\">`rfl : a = a` is the unique constructor of the equality type. This is the\nsame as `Eq.refl` except that it takes `a` implicitly instead of explicitly.\n\nThis is a more powerful theorem than it may appear at first, because although\nthe statement of the theorem is `a = a`, Lean will allow anything that is\ndefinitionally equal to that type. So, for instance, `2 + 2 = 4` is proven in\nLean by `rfl`, because both sides are the same up to definitional equality.\n</code>",
+ "86": "<code>Chapter7.a_def (α t : ℝ) : a α t = 1 / (4 * α * t)</code>",
+ "85": "<code>0 &lt; heatK α * t</code>",
+ "84":
+ "<code>Ne.{u} {α : Sort u} (a b : α) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`a ≠ b`, or `Ne a b` is defined as `¬ (a = b)` or `a = b → False`,\nand asserts that `a` and `b` are not equal.\n\n\nConventions for notations in identifiers:\n\n * The recommended spelling of `≠` in identifiers is `ne`.</code>",
+ "83":
+ "<code>Chapter7.sqrt_ne_zero (α : ℝ) (hα : 0 &lt; α) {t : ℝ} (ht : 0 &lt; t) : √(heatK α * t) ≠ 0</code>",
+ "82":
+ "<code>Chapter7.k_mul_t_pos (α : ℝ) (hα : 0 &lt; α) {t : ℝ} (ht : 0 &lt; t) : 0 &lt; heatK α * t</code>",
+ "81": "<code>Chapter7.k_pos (α : ℝ) (hα : 0 &lt; α) : 0 &lt; heatK α</code>",
+ "80":
+ "<code>Chapter7.Φ (α x t : ℝ) : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">1-D heat kernel. We keep both variables explicit. </code>",
+ "8": "<code>ℕ</code>",
+ "79":
+ "<code>Chapter7.c (α t : ℝ) : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">`c(t) = 1/√(4 π α t)` the normalization in front. </code>",
+ "78":
+ "<code>Chapter7.a (α t : ℝ) : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">`a(t) = 1/(4 α t)` used in the exponent. </code>",
+ "77":
+ "<code class=\"docstring\">Theorems tagged with the `simp` attribute are used by the simplifier\n(i.e., the `simp` tactic, and its variants) to simplify expressions occurring in your goals.\nWe call theorems tagged with the `simp` attribute \"simp theorems\" or \"simp lemmas\".\nLean maintains a database/index containing all active simp theorems.\nHere is an example of a simp theorem.\n```lean\n@[simp] theorem ne_eq (a b : α) : (a ≠ b) = Not (a = b) := rfl\n```\nThis simp theorem instructs the simplifier to replace instances of the term\n`a ≠ b` (e.g. `x + 0 ≠ y`) with `Not (a = b)` (e.g., `Not (x + 0 = y)`).\nThe simplifier applies simp theorems in one direction only:\nif `A = B` is a simp theorem, then `simp` replaces `A`s with `B`s,\nbut it doesn't replace `B`s with `A`s. Hence a simp theorem should have the\nproperty that its right-hand side is \"simpler\" than its left-hand side.\nIn particular, `=` and `↔` should not be viewed as symmetric operators in this situation.\nThe following would be a terrible simp theorem (if it were even allowed):\n```lean\n@[simp] lemma mul_right_inv_bad (a : G) : 1 = a * a⁻¹ := ...\n```\nReplacing 1 with a * a⁻¹ is not a sensible default direction to travel.\nEven worse would be a theorem that causes expressions to grow without bound,\ncausing simp to loop forever.\n\nBy default the simplifier applies `simp` theorems to an expression `e`\nafter its sub-expressions have been simplified.\nWe say it performs a bottom-up simplification.\nYou can instruct the simplifier to apply a theorem before its sub-expressions\nhave been simplified by using the modifier `↓`. Here is an example\n```lean\n@[simp↓] theorem not_and_eq (p q : Prop) : (¬ (p ∧ q)) = (¬p ∨ ¬q) :=\n```\n\nYou can instruct the simplifier to rewrite the lemma from right-to-left:\n```lean\nattribute @[simp ←] and_assoc\n```\n\nWhen multiple simp theorems are applicable, the simplifier uses the one with highest priority.\nThe equational theorems of functions are applied at very low priority (100 and below).\nIf there are several with the same priority, it is uses the \"most recent one\". Example:\n```lean\n@[simp high] theorem cond_true (a b : α) : cond true a b = a := rfl\n@[simp low+1] theorem or_true (p : Prop) : (p ∨ True) = True :=\n  propext &lt;| Iff.intro (fun _ =&gt; trivial) (fun _ =&gt; Or.inr trivial)\n@[simp 100] theorem ite_self {d : Decidable c} (a : α) : ite c a a = a := by\n  cases d &lt;;&gt; rfl\n```\n</code>",
+ "76":
+ "<code>Chapter7.heatK (α : ℝ) : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">Useful constant `k = 4 π α`. </code>",
+ "75":
+ "<code>inv_mul_cancel₀.{u_3} {G₀ : Type u_3} [GroupWithZero G₀] {a : G₀} (h : a ≠ 0) : a⁻¹ * a = 1</code>",
+ "74":
+ "<code class=\"docstring\">`rw` is like `rewrite`, but also tries to close the goal by \"cheap\" (reducible) `rfl` afterwards.\n</code>",
+ "73": "<code>0 &lt; 4 * Real.pi * (_fvar.111078 * _fvar.111080)</code>",
+ "72":
+ "<code class=\"docstring\">Step-wise reasoning over transitive relations.\n```\ncalc\n  a = b := pab\n  b = c := pbc\n  ...\n  y = z := pyz\n```\nproves `a = z` from the given step-wise proofs. `=` can be replaced with any\nrelation implementing the typeclass `Trans`. Instead of repeating the right-\nhand sides, subsequent left-hand sides can be replaced with `_`.\n```\ncalc\n  a = b := pab\n  _ = c := pbc\n  ...\n  _ = z := pyz\n```\nIt is also possible to write the *first* relation as `&lt;lhs&gt;\\n  _ = &lt;rhs&gt; :=\n&lt;proof&gt;`. This is useful for aligning relation symbols, especially on longer:\nidentifiers:\n```\ncalc abc\n  _ = bce := pabce\n  _ = cef := pbcef\n  ...\n  _ = xyz := pwxyz\n```\n\n`calc` works as a term, as a tactic or as a `conv` tactic.\n\nSee [Theorem Proving in Lean 4][tpil4] for more information.\n\n[tpil4]: https://lean-lang.org/theorem_proving_in_lean4/quantifiers_and_equality.html#calculational-proofs\n</code>",
+ "71":
+ "<code>ne_of_gt.{u_1} {α : Type u_1} [Preorder α] {a b : α} (h : b &lt; a) : a ≠ b</code>",
+ "70": "<code>√(4 * Real.pi * α * t) ≠ 0</code>",
+ "7":
+ "<code>Real.exp (x : ℝ) : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">The real exponential function, defined as the real part of the complex exponential </code>",
+ "69": "<code>0 &lt; 4 * Real.pi * (α * t)</code>",
+ "68": "<code>0 &lt; α * t</code>",
+ "67": "<code>_fvar.112363 = (4 * _fvar.111078 * _fvar.111080)⁻¹</code>",
+ "66":
+ "<code>Real.pi / _fvar.112363 = 4 * Real.pi * _fvar.111078 * _fvar.111080</code>",
+ "65": "<code>ℝ → ℝ</code>",
+ "64":
+ "<code>Bool.false : Bool</code><span class=\"sep\"></span><code class=\"docstring\">The Boolean value `false`, not to be confused with the proposition `False`. </code>",
+ "63": "<code>0 &lt; 4 * Real.pi</code>",
+ "62":
+ "<code>inv_inv.{u_1} {G : Type u_1} [InvolutiveInv G] (a : G) : a⁻¹⁻¹ = a</code>",
+ "61": "<code>a = (4 * α * t)⁻¹</code>",
+ "60": "<code>Real.pi / a = 4 * Real.pi * α * t</code>",
+ "6":
+ "<code>Real.pi : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">The number π = 3.14159265... Defined here using choice as twice a zero of cos in [1,2], from\nwhich one can derive all its properties. For explicit bounds on π, see `Data.Real.Pi.Bounds`.\n\nDenoted `π`, once the `Real` namespace is opened. </code>",
+ "59": "<code>√(Real.pi / a) = √(4 * Real.pi * α * t)</code>",
+ "58":
+ "<code class=\"docstring\">The `sorry` tactic is a temporary placeholder for an incomplete tactic proof,\nclosing the main goal using `exact sorry`.\n\nThis is intended for stubbing-out incomplete parts of a proof while still having a syntactically correct proof skeleton.\nLean will give a warning whenever a proof uses `sorry`, so you aren't likely to miss it,\nbut you can double check if a theorem depends on `sorry` by looking for `sorryAx` in the output\nof the `#print axioms my_thm` command, the axiom used by the implementation of `sorry`.\n</code>",
+ "57": "<code>∫ (x : ℝ), Real.exp (-a * x ^ 2) = √(Real.pi / a)</code>",
+ "56":
+ "<code>∫ (x : ℝ), 1 / √(4 * Real.pi * α * t) * Real.exp (-a * x ^ 2) =\n  1 / √(4 * Real.pi * α * t) * ∫ (x : ℝ), Real.exp (-a * x ^ 2)</code>",
+ "55":
+ "<code>MeasureTheory.integral_const_mul.{u_1, u_6} {α : Type u_1} {m : MeasurableSpace α} {μ : MeasureTheory.Measure α}\n  {L : Type u_6} [RCLike L] (r : L) (f : α → L) : ∫ (a : α), r * f a ∂μ = r * ∫ (a : α), f a ∂μ</code>",
+ "54":
+ "<code class=\"docstring\">`refine e` behaves like `exact e`, except that named (`?x`) or unnamed (`?_`)\nholes in `e` that are not solved by unification with the main goal's target type\nare converted into new goals, using the hole's name, if any, as the goal case name.\n</code>",
+ "53":
+ "<code>∫ (x : ℝ), c * Real.exp (-a * x ^ 2) = c * ∫ (x : ℝ), Real.exp (-a * x ^ 2)</code>",
+ "52":
+ "<code>(fun x =&gt; heatKernel α x t) = fun x =&gt; c * Real.exp (-a * x ^ 2)</code>",
+ "51": "<code>c = 1 / √(4 * Real.pi * α * t)</code>",
+ "50":
+ "<code>mul_assoc.{u_1} {G : Type u_1} [Semigroup G] (a b c : G) : a * b * c = a * (b * c)</code>",
+ "5":
+ "<code>Real.sqrt (x : ℝ) : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">The square root of a real number. This returns 0 for negative inputs.\n\nThis has notation `√x`. Note that `√x⁻¹` is parsed as `√(x⁻¹)`. </code>",
+ "49":
+ "<code>mul_left_comm.{u_3} {G : Type u_3} [CommSemigroup G] (a b c : G) : a * (b * c) = b * (a * c)</code>",
+ "48":
+ "<code>mul_comm.{u_1} {G : Type u_1} [CommMagma G] (a b : G) : a * b = b * a</code>",
+ "47":
+ "<code>pow_two.{u_2} {M : Type u_2} [Monoid M] (a : M) : a ^ 2 = a * a</code><span class=\"sep\"></span><code class=\"docstring\">Note that most of the lemmas about powers of two refer to it as `sq`. </code>",
+ "46":
+ "<code>div_eq_mul_inv.{u_1} {G : Type u_1} [DivInvMonoid G] (a b : G) : a / b = a * b⁻¹</code><span class=\"sep\"></span><code class=\"docstring\">Dividing by an element is the same as multiplying by its inverse.\n\nThis is a duplicate of `DivInvMonoid.div_eq_mul_inv` ensuring that the types unfold better.\n</code>",
+ "45":
+ "<code class=\"docstring\">The `simp` tactic uses lemmas and hypotheses to simplify the main goal target or\nnon-dependent hypotheses. It has many variants:\n- `simp` simplifies the main goal target using lemmas tagged with the attribute `[simp]`.\n- `simp [h₁, h₂, ..., hₙ]` simplifies the main goal target using the lemmas tagged\n  with the attribute `[simp]` and the given `hᵢ`'s, where the `hᵢ`'s are expressions.-\n- If an `hᵢ` is a defined constant `f`, then `f` is unfolded. If `f` has equational lemmas associated\n  with it (and is not a projection or a `reducible` definition), these are used to rewrite with `f`.\n- `simp [*]` simplifies the main goal target using the lemmas tagged with the\n  attribute `[simp]` and all hypotheses.\n- `simp only [h₁, h₂, ..., hₙ]` is like `simp [h₁, h₂, ..., hₙ]` but does not use `[simp]` lemmas.\n- `simp [-id₁, ..., -idₙ]` simplifies the main goal target using the lemmas tagged\n  with the attribute `[simp]`, but removes the ones named `idᵢ`.\n- `simp at h₁ h₂ ... hₙ` simplifies the hypotheses `h₁ : T₁` ... `hₙ : Tₙ`. If\n  the target or another hypothesis depends on `hᵢ`, a new simplified hypothesis\n  `hᵢ` is introduced, but the old one remains in the local context.\n- `simp at *` simplifies all the hypotheses and the target.\n- `simp [*] at *` simplifies target and all (propositional) hypotheses using the\n  other hypotheses.\n</code>",
+ "441":
+ "<code>(fun t =&gt; heatConvolutionHK α g x t) = fun t =&gt;\n  (∫ (y : ℝ), heatKernel α (x - y) t) * g x + ∫ (y : ℝ), heatKernel α (x - y) t * (g y - g x)</code>",
+ "440":
+ "<code>|∫ (y : ℝ), heatKernel α (x - y) t * (g y - g x)| ≤ ε / 2 + ε / 2</code>",
+ "44":
+ "<code>HPow.hPow.{u, v, w} {α : Type u} {β : Type v} {γ : outParam (Type w)} [self : HPow α β γ] : α → β → γ</code><span class=\"sep\"></span><code class=\"docstring\">`a ^ b` computes `a` to the power of `b`.\nThe meaning of this notation is type-dependent. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `^` in identifiers is `pow`.</code>",
+ "439":
+ "<code>add_le_add.{u_1} {α : Type u_1} [Add α] [Preorder α] [AddLeftMono α] [AddRightMono α] {a b c d : α} (h₁ : a ≤ b)\n  (h₂ : c ≤ d) : a + c ≤ b + d</code>",
+ "438":
+ "<code>abs_add.{u_1} {G : Type u_1} [AddCommGroup G] [LinearOrder G] [IsOrderedAddMonoid G] (a b : G) : |a + b| ≤ |a| + |b|</code><span class=\"sep\"></span><code class=\"docstring\">The **triangle inequality** in `LinearOrderedAddCommGroup`s. </code>",
+ "437":
+ "<code>(_fvar.3773 + |@_fvar.788 _fvar.789|) *\n    |∫ (y : ℝ), Set.indicator _fvar.8614 (fun y =&gt; Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682) y| ≤\n  (_fvar.3773 + |@_fvar.788 _fvar.789| + 1) *\n    |∫ (y : ℝ), Set.indicator _fvar.8614 (fun y =&gt; Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682) y|</code>",
+ "436":
+ "<code>_fvar.3773 + |@_fvar.788 _fvar.789| + 1 &lt; _fvar.3773 + |@_fvar.788 _fvar.789|</code>",
+ "435":
+ "<code>_fvar.3773 + |@_fvar.788 _fvar.789| ≤ _fvar.3773 + |@_fvar.788 _fvar.789| + 1</code>",
+ "434":
+ "<code>(_fvar.3773 + |@_fvar.788 _fvar.789|) *\n    |∫ (y : ℝ), Set.indicator _fvar.8614 (fun y =&gt; Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682) y| ≤\n  _fvar.4078 / 2</code>",
+ "433":
+ "<code>|∫ (y : ℝ),\n      Set.indicator _fvar.8614\n        (fun y =&gt; Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682 * (@_fvar.788 y - @_fvar.788 _fvar.789)) y| ≤\n  (_fvar.3773 + |@_fvar.788 _fvar.789|) *\n    |∫ (y : ℝ), Set.indicator _fvar.8614 (fun y =&gt; Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682) y|</code>",
+ "432": "<code>y ∉ _fvar.8614</code>",
+ "431": "<code>Real.instZero : Zero ℝ</code>",
+ "430": "<code>y ∈ _fvar.8614</code>",
+ "43":
+ "<code>Neg.neg.{u} {α : Type u} [self : Neg α] : α → α</code><span class=\"sep\"></span><code class=\"docstring\">`-a` computes the negative or opposite of `a`.\nThe meaning of this notation is type-dependent. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `-` in identifiers is `neg` (when used as a unary operator).</code>",
+ "429": "<code>ℝ → x_0</code>",
+ "428": "<code>Zero x_0</code>",
+ "427": "<code>Type</code>",
+ "426":
+ "<code>|Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682 * (@_fvar.788 y - @_fvar.788 _fvar.789)| ≤\n  (_fvar.3773 + |@_fvar.788 _fvar.789|) * Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682</code>",
+ "425":
+ "<code>0 ≤ Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682</code>",
+ "424":
+ "<code>|@_fvar.788 y - @_fvar.788 _fvar.789| ≤ _fvar.3773 + |@_fvar.788 _fvar.789|</code>",
+ "423":
+ "<code>∀ᵐ (y : ℝ),\n  |Set.indicator _fvar.8614\n        (fun y =&gt; Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682 * (@_fvar.788 y - @_fvar.788 _fvar.789)) y| ≤\n    (_fvar.3773 + |@_fvar.788 _fvar.789|) *\n      Set.indicator _fvar.8614 (fun y =&gt; Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682) y</code>",
+ "422":
+ "<code>_fvar.3773 + |@_fvar.788 _fvar.789| &lt; |@_fvar.788 y| + |@_fvar.788 _fvar.789|</code>",
+ "421": "<code>|@_fvar.788 y| ≤ _fvar.3773</code>",
+ "420":
+ "<code>|@_fvar.788 y - @_fvar.788 _fvar.789| ≤ |@_fvar.788 y| + |@_fvar.788 _fvar.789|</code>",
+ "42":
+ "<code>HDiv.hDiv.{u, v, w} {α : Type u} {β : Type v} {γ : outParam (Type w)} [self : HDiv α β γ] : α → β → γ</code><span class=\"sep\"></span><code class=\"docstring\">`a / b` computes the result of dividing `a` by `b`.\nThe meaning of this notation is type-dependent.\n* For most types like `Nat`, `Int`, `Rat`, `Real`, `a / 0` is defined to be `0`.\n* For `Nat`, `a / b` rounds downwards.\n* For `Int`, `a / b` rounds downwards if `b` is positive or upwards if `b` is negative.\n  It is implemented as `Int.ediv`, the unique function satisfying\n  `a % b + b * (a / b) = a` and `0 ≤ a % b &lt; natAbs b` for `b ≠ 0`.\n  Other rounding conventions are available using the functions\n  `Int.fdiv` (floor rounding) and `Int.tdiv` (truncation rounding).\n* For `Float`, `a / 0` follows the IEEE 754 semantics for division,\n  usually resulting in `inf` or `nan`. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `/` in identifiers is `div`.</code>",
+ "419":
+ "<code>∀ (y : ℝ), |@_fvar.788 y - @_fvar.788 _fvar.789| ≤ _fvar.3773 + |@_fvar.788 _fvar.789|</code>",
+ "418":
+ "<code>(B + |g x|) * |∫ (y : ℝ), far.indicator (fun y =&gt; heatKernel α (x - y) t) y| ≤ ε / 2</code>",
+ "417":
+ "<code>le_trans.{u_1} {α : Type u_1} [Preorder α] {a b c : α} : a ≤ b → b ≤ c → a ≤ c</code><span class=\"sep\"></span><code class=\"docstring\">The relation `≤` on a preorder is transitive. </code>",
+ "416":
+ "<code>(B + |g x|) * |∫ (y : ℝ), far.indicator (fun y =&gt; heatKernel α (x - y) t) y| ≤\n  (B + |g x| + 1) * |∫ (y : ℝ), far.indicator (fun y =&gt; heatKernel α (x - y) t) y|</code>",
+ "415":
+ "<code>|∫ (y : ℝ), far.indicator (fun y =&gt; heatKernel α (x - y) t * (g y - g x)) y| ≤\n  (B + |g x|) * |∫ (y : ℝ), far.indicator (fun y =&gt; heatKernel α (x - y) t) y|</code>",
+ "414": "<code>B + |g x| ≤ B + |g x| + 1</code>",
+ "413":
+ "<code>|heatKernel α (x - y) t * (g y - g x)| ≤ (B + |g x|) * heatKernel α (x - y) t</code>",
+ "412": "<code>|g y - g x| ≤ B + |g x|</code>",
+ "411": "<code>y ∉ far</code>",
+ "410": "<code>y ∈ far</code>",
+ "41":
+ "<code class=\"docstring\">Apply function extensionality and introduce new hypotheses.\nThe tactic `funext` will keep applying the `funext` lemma until the goal target is not reducible to\n```\n  |-  ((fun x =&gt; ...) = (fun x =&gt; ...))\n```\nThe variant `funext h₁ ... hₙ` applies `funext` `n` times, and uses the given identifiers to name the new hypotheses.\nPatterns can be used like in the `intro` tactic. Example, given a goal\n```\n  |-  ((fun x : Nat × Bool =&gt; ...) = (fun x =&gt; ...))\n```\n`funext (a, b)` applies `funext` once and performs pattern matching on the newly introduced pair.\n</code>",
+ "409":
+ "<code>∀ᵐ (y : ℝ),\n  |far.indicator (fun y =&gt; heatKernel α (x - y) t * (g y - g x)) y| ≤\n    (B + |g x|) * far.indicator (fun y =&gt; heatKernel α (x - y) t) y</code>",
+ "408":
+ "<code class=\"docstring\">`linarith` attempts to find a contradiction between hypotheses that are linear (in)equalities.\nEquivalently, it can prove a linear inequality by assuming its negation and proving `False`.\n\nIn theory, `linarith` should prove any goal that is true in the theory of linear arithmetic over\nthe rationals. While there is some special handling for non-dense orders like `Nat` and `Int`,\nthis tactic is not complete for these theories and will not prove every true goal. It will solve\ngoals over arbitrary types that instantiate `CommRing`, `LinearOrder` and `IsStrictOrderedRing`.\n\nAn example:\n```lean\nexample (x y z : ℚ) (h1 : 2*x &lt; 3*y) (h2 : -4*x + 2*z &lt; 0)\n        (h3 : 12*y - 4* z &lt; 0) : False := by\n  linarith\n```\n\n`linarith` will use all appropriate hypotheses and the negation of the goal, if applicable.\nDisequality hypotheses require case splitting and are not normally considered\n(see the `splitNe` option below).\n\n`linarith [t1, t2, t3]` will additionally use proof terms `t1, t2, t3`.\n\n`linarith only [h1, h2, h3, t1, t2, t3]` will use only the goal (if relevant), local hypotheses\n`h1`, `h2`, `h3`, and proofs `t1`, `t2`, `t3`. It will ignore the rest of the local context.\n\n`linarith!` will use a stronger reducibility setting to try to identify atoms. For example,\n```lean\nexample (x : ℚ) : id x ≥ x := by\n  linarith\n```\nwill fail, because `linarith` will not identify `x` and `id x`. `linarith!` will.\nThis can sometimes be expensive.\n\n`linarith (config := { .. })` takes a config object with five\noptional arguments:\n* `discharger` specifies a tactic to be used for reducing an algebraic equation in the\n  proof stage. The default is `ring`. Other options include `simp` for basic\n  problems.\n* `transparency` controls how hard `linarith` will try to match atoms to each other. By default\n  it will only unfold `reducible` definitions.\n* If `splitHypotheses` is true, `linarith` will split conjunctions in the context into separate\n  hypotheses.\n* If `splitNe` is `true`, `linarith` will case split on disequality hypotheses.\n  For a given `x ≠ y` hypothesis, `linarith` is run with both `x &lt; y` and `x &gt; y`,\n  and so this runs linarith exponentially many times with respect to the number of\n  disequality hypotheses. (`false` by default.)\n* If `exfalso` is `false`, `linarith` will fail when the goal is neither an inequality nor `False`.\n  (`true` by default.)\n* `restrict_type` (not yet implemented in mathlib4)\n  will only use hypotheses that are inequalities over `tp`. This is useful\n  if you have e.g. both integer and rational valued inequalities in the local context, which can\n  sometimes confuse the tactic.\n\nA variant, `nlinarith`, does some basic preprocessing to handle some nonlinear goals.\n\nThe option `set_option trace.linarith true` will trace certain intermediate stages of the `linarith`\nroutine.\n</code>",
+ "407": "<code>|g y| ≤ B</code>",
+ "406": "<code>0 ≤ _fvar.4078 / 2</code>",
+ "405":
+ "<code>∫ (y : ℝ), _fvar.8614ᶜ.indicator (fun y =&gt; Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682) y ≤ 1</code>",
+ "404":
+ "<code>∫ (y : ℝ), _fvar.8614ᶜ.indicator (fun y =&gt; Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682) y ≤\n  ∫ (y : ℝ), Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682</code>",
+ "403":
+ "<code>∫ (y : ℝ), Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682 = 1</code>",
+ "402":
+ "<code>_fvar.4078 / 2 *\n    ∫ (y : ℝ), _fvar.8614ᶜ.indicator (fun y =&gt; Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682) y ≤\n  _fvar.4078 / 2</code>",
+ "401":
+ "<code>∫ (y : ℝ),\n    _fvar.8614ᶜ.indicator\n      (fun y =&gt; Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682 * |@_fvar.788 y - @_fvar.788 _fvar.789|) y ≤\n  _fvar.4078 / 2 *\n    ∫ (y : ℝ), _fvar.8614ᶜ.indicator (fun y =&gt; Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682) y</code>",
+ "400":
+ "<code>|∫ (y : ℝ),\n      _fvar.8614ᶜ.indicator\n        (fun y =&gt; Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682 * (@_fvar.788 y - @_fvar.788 _fvar.789)) y| ≤\n  ∫ (y : ℝ),\n    _fvar.8614ᶜ.indicator\n      (fun y =&gt; Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682 * |@_fvar.788 y - @_fvar.788 _fvar.789|) y</code>",
+ "40":
+ "<code>(fun x =&gt; heatKernel α x t) = fun x =&gt; 1 / √(4 * Real.pi * α * t) * Real.exp (-a * x ^ 2)</code>",
+ "4":
+ "<code>Chapter7.heatKernel (α x t : ℝ) : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">The 1D heat kernel with diffusivity `α` (assumed positive in theorems). </code>",
+ "399": "<code>¬_fvar.5171 ≤ |y - _fvar.789|</code>",
+ "398": "<code>y ∈ _fvar.8614ᶜ</code>",
+ "397":
+ "<code>∀ {y : ℝ}, y ∈ _fvar.8614ᶜ → |@_fvar.788 y - @_fvar.788 _fvar.789| ≤ _fvar.4078 / 2</code>",
+ "396":
+ "<code>∀ (y : ℝ), 0 ≤ Chapter7.heatKernel _fvar.787 (_fvar.789 - y) _fvar.9682</code>",
+ "395": "<code>0 &lt; _fvar.3773 + |@_fvar.788 _fvar.789| + 1</code>",
+ "394": "<code>0 ≤ _fvar.3773</code>",
+ "393":
+ "<code>y ∈ {y | dist (@_fvar.788 y) (@_fvar.788 _fvar.789) &lt; _fvar.4078 / 2}</code>",
+ "392": "<code>y ∈ Metric.ball _fvar.789 _fvar.5171</code>",
+ "391": "<code>dist y _fvar.789 &lt; _fvar.5171</code>",
+ "390": "<code>|y - _fvar.789| &lt; _fvar.5171</code>",
+ "39":
+ "<code>one_div.{u_1} {G : Type u_1} [DivInvMonoid G] (a : G) : 1 / a = a⁻¹</code>",
+ "389": "<code>|g y - g x| ≤ |g y| + |g x|</code>",
+ "388": "<code>∀ (y : ℝ), |g y - g x| ≤ B + |g x|</code>",
+ "387":
+ "<code>|∫ (y : ℝ), far.indicator (fun y =&gt; heatKernel α (x - y) t * (g y - g x)) y| ≤ ε / 2</code>",
+ "386": "<code>0 ≤ ε / 2</code>",
+ "385":
+ "<code class=\"docstring\">`try tac` runs `tac` and succeeds even if `tac` failed. </code>",
+ "384":
+ "<code class=\"docstring\">`all_goals tac` runs `tac` on each goal, concatenating the resulting goals.\nIf the tactic fails on any goal, the entire `all_goals` tactic fails.\n\nSee also `any_goals tac`.\n</code>",
+ "383":
+ "<code>∫ (y : ℝ), farᶜ.indicator (fun y =&gt; heatKernel α (x - y) t) y ≤ ∫ (y : ℝ), heatKernel α (x - y) t</code>",
+ "382":
+ "<code>∫ (y : ℝ), farᶜ.indicator (fun y =&gt; heatKernel α (x - y) t * |g y - g x|) y ≤\n  ε / 2 * ∫ (y : ℝ), farᶜ.indicator (fun y =&gt; heatKernel α (x - y) t) y</code>",
+ "381":
+ "<code>|∫ (y : ℝ), farᶜ.indicator (fun y =&gt; heatKernel α (x - y) t * (g y - g x)) y| ≤\n  ∫ (y : ℝ), farᶜ.indicator (fun y =&gt; heatKernel α (x - y) t * |g y - g x|) y</code>",
+ "380": "<code>¬δ ≤ |y - x|</code>",
+ "38": "<code>0 &lt; a</code>",
+ "379":
+ "<code>lt_of_not_ge.{u_1} {α : Type u_1} [LinearOrder α] {a b : α} (h : ¬b ≤ a) : a &lt; b</code>",
+ "378": "<code>y ∈ farᶜ</code>",
+ "377": "<code>∀ {y : ℝ}, y ∈ farᶜ → |g y - g x| ≤ ε / 2</code>",
+ "376":
+ "<code>HasCompl.compl.{u_1} {α : Type u_1} [self : HasCompl α] : α → α</code><span class=\"sep\"></span><code class=\"docstring\">Set / lattice complement </code>",
+ "375":
+ "<code>∀ᶠ (t' : ℝ) in 𝓝[&gt;] 0, |∫ (y : ℝ), far.indicator (fun y =&gt; heatKernel α (x - y) t') y| ≤ ε / (4 * (B + |g x| + 1))</code>",
+ "374": "<code>∀ (y : ℝ), 0 ≤ heatKernel α (x - y) t</code>",
+ "373":
+ "<code>|∫ (y : ℝ), farᶜ.indicator (fun y =&gt; heatKernel α (x - y) t * (g y - g x)) y| ≤ ε / 2</code>",
+ "372":
+ "<code>∫ (y : ℝ), heatKernel α (x - y) t * (g y - g x) =\n  ∫ (y : ℝ),\n    farᶜ.indicator (fun y =&gt; heatKernel α (x - y) t * (g y - g x)) y +\n      ∫ (y : ℝ), far.indicator (fun y =&gt; heatKernel α (x - y) t * (g y - g x)) y</code>",
+ "371": "<code class=\"docstring\">`admit` is a synonym for `sorry`. </code>",
+ "370":
+ "<code>|∫ (y : ℝ), far.indicator (fun y =&gt; heatKernel α (x - y) t) y| ≤ ε / (4 * (B + |g x| + 1))</code>",
+ "37": "<code>a = 1 / (4 * α * t)</code>",
+ "369": "<code>0 &lt; B + |g x| + 1</code>",
+ "368":
+ "<code>Tendsto (fun t =&gt; ∫ (y : ℝ), far.indicator (fun y =&gt; heatKernel α (x - y) t) y) (𝓝[&gt;] 0) (𝓝 0)</code>",
+ "367": "<code>far = {y | δ ≤ |y - x|}</code>",
+ "366": "<code>near = {y | |y - x| &lt; δ}</code>",
+ "365":
+ "<code>Set.{u} (α : Type u) : Type u</code><span class=\"sep\"></span><code class=\"docstring\">A set is a collection of elements of some type `α`.\n\nAlthough `Set` is defined as `α → Prop`, this is an implementation detail which should not be\nrelied on. Instead, `setOf` and membership of a set (`∈`) should be used to convert between sets\nand predicates.\n</code>",
+ "364": "<code>Set ℝ</code>",
+ "363": "<code>y ∈ {y | dist (g y) (g x) &lt; ε / 2}</code>",
+ "362":
+ "<code>Metric.mem_ball.{u} {α : Type u} [PseudoMetricSpace α] {x y : α} {ε : ℝ} : y ∈ Metric.ball x ε ↔ dist y x &lt; ε</code>",
+ "361": "<code>y ∈ Metric.ball x δ</code>",
+ "360": "<code>Real.dist_eq (x y : ℝ) : dist x y = |x - y|</code>",
+ "36": "<code>0 &lt; 4 * α * t</code>",
+ "359": "<code>dist y x &lt; δ</code>",
+ "358": "<code>|y - x| &lt; δ</code>",
+ "357": "<code>∀ ⦃y : ℝ⦄, |y - x| &lt; δ → |g y - g x| &lt; ε / 2</code>",
+ "356":
+ "<code>HasSubset.Subset.{u} {α : Type u} [self : HasSubset α] : α → α → Prop</code><span class=\"sep\"></span><code class=\"docstring\">Subset relation: `a ⊆ b`  \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `⊆` in identifiers is `subset`.</code>",
+ "355":
+ "<code>Metric.ball.{u} {α : Type u} [PseudoMetricSpace α] (x : α) (ε : ℝ) : Set α</code><span class=\"sep\"></span><code class=\"docstring\">`ball x ε` is the set of all points `y` with `dist y x &lt; ε` </code>",
+ "354": "<code>Metric.ball x δ ⊆ {y | dist (g y) (g x) &lt; ε / 2}</code>",
+ "353": "<code>δ &gt; 0</code>",
+ "352":
+ "<code>Metric.mem_nhds_iff.{u} {α : Type u} [PseudoMetricSpace α] {x : α} {s : Set α} : s ∈ 𝓝 x ↔ ∃ ε &gt; 0, Metric.ball x ε ⊆ s</code>",
+ "351": "<code>{y | dist (g y) (g x) &lt; ε / 2} ∈ 𝓝 x</code>",
+ "350":
+ "<code>half_pos.{u_2} {α : Type u_2} [Semifield α] [LinearOrder α] [IsStrictOrderedRing α] {a : α} (h : 0 &lt; a) : 0 &lt; a / 2</code>",
+ "35":
+ "<code>Eq.{u_1} {α : Sort u_1} : α → α → Prop</code><span class=\"sep\"></span><code class=\"docstring\">The equality relation. It has one introduction rule, `Eq.refl`.\nWe use `a = b` as notation for `Eq a b`.\nA fundamental property of equality is that it is an equivalence relation.\n```\nvariable (α : Type) (a b c d : α)\nvariable (hab : a = b) (hcb : c = b) (hcd : c = d)\n\nexample : a = d :=\n  Eq.trans (Eq.trans hab (Eq.symm hcb)) hcd\n```\nEquality is much more than an equivalence relation, however. It has the important property that every assertion\nrespects the equivalence, in the sense that we can substitute equal expressions without changing the truth value.\nThat is, given `h1 : a = b` and `h2 : p a`, we can construct a proof for `p b` using substitution: `Eq.subst h1 h2`.\nExample:\n```\nexample (α : Type) (a b : α) (p : α → Prop)\n        (h1 : a = b) (h2 : p a) : p b :=\n  Eq.subst h1 h2\n\nexample (α : Type) (a b : α) (p : α → Prop)\n    (h1 : a = b) (h2 : p a) : p b :=\n  h1 ▸ h2\n```\nThe triangle in the second presentation is a macro built on top of `Eq.subst` and `Eq.symm`, and you can enter it by typing `\\t`.\nFor more information: [Equality](https://lean-lang.org/theorem_proving_in_lean4/quantifiers_and_equality.html#equality)\n\n\nConventions for notations in identifiers:\n\n * The recommended spelling of `=` in identifiers is `eq`.</code>",
+ "349": "<code>∀ᶠ (y : ℝ) in 𝓝 x, dist (g y) (g x) &lt; ε / 2</code>",
+ "348":
+ "<code>GT.gt.{u} {α : Type u} [LT α] (a b : α) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`a &gt; b` is an abbreviation for `b &lt; a`. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `&gt;` in identifiers is `gt`.</code>",
+ "347": "<code>ε &gt; 0</code>",
+ "346":
+ "<code>Dist.dist.{u_3} {α : Type u_3} [self : Dist α] : α → α → ℝ</code><span class=\"sep\"></span><code class=\"docstring\">Distance between two points </code>",
+ "345":
+ "<code>Metric.tendsto_nhds.{u, v} {α : Type u} {β : Type v} [PseudoMetricSpace α] {f : Filter β} {u : β → α} {a : α} :\n  Tendsto u f (𝓝 a) ↔ ∀ ε &gt; 0, ∀ᶠ (x : β) in f, dist (u x) a &lt; ε</code>",
+ "344":
+ "<code>Continuous.continuousAt.{u_1, u_2} {X : Type u_1} {Y : Type u_2} [TopologicalSpace X] [TopologicalSpace Y] {f : X → Y}\n  {x : X} (h : Continuous f) : ContinuousAt f x</code>",
+ "343":
+ "<code>ContinuousAt.{u_1, u_2} {X : Type u_1} {Y : Type u_2} [TopologicalSpace X] [TopologicalSpace Y] (f : X → Y) (x : X) :\n  Prop</code><span class=\"sep\"></span><code class=\"docstring\">A function between topological spaces is continuous at a point `x₀`\nif `f x` tends to `f x₀` when `x` tends to `x₀`. </code>",
+ "342": "<code>ContinuousAt g x</code>",
+ "341": "<code>0 ≤ B✝</code>",
+ "340":
+ "<code class=\"docstring\">`rcases` is a tactic that will perform `cases` recursively, according to a pattern. It is used to\ndestructure hypotheses or expressions composed of inductive types like `h1 : a ∧ b ∧ c ∨ d` or\n`h2 : ∃ x y, trans_rel R x y`. Usual usage might be `rcases h1 with ⟨ha, hb, hc⟩ | hd` or\n`rcases h2 with ⟨x, y, _ | ⟨z, hxz, hzy⟩⟩` for these examples.\n\nEach element of an `rcases` pattern is matched against a particular local hypothesis (most of which\nare generated during the execution of `rcases` and represent individual elements destructured from\nthe input expression). An `rcases` pattern has the following grammar:\n\n* A name like `x`, which names the active hypothesis as `x`.\n* A blank `_`, which does nothing (letting the automatic naming system used by `cases` name the\n  hypothesis).\n* A hyphen `-`, which clears the active hypothesis and any dependents.\n* The keyword `rfl`, which expects the hypothesis to be `h : a = b`, and calls `subst` on the\n  hypothesis (which has the effect of replacing `b` with `a` everywhere or vice versa).\n* A type ascription `p : ty`, which sets the type of the hypothesis to `ty` and then matches it\n  against `p`. (Of course, `ty` must unify with the actual type of `h` for this to work.)\n* A tuple pattern `⟨p1, p2, p3⟩`, which matches a constructor with many arguments, or a series\n  of nested conjunctions or existentials. For example if the active hypothesis is `a ∧ b ∧ c`,\n  then the conjunction will be destructured, and `p1` will be matched against `a`, `p2` against `b`\n  and so on.\n* A `@` before a tuple pattern as in `@⟨p1, p2, p3⟩` will bind all arguments in the constructor,\n  while leaving the `@` off will only use the patterns on the explicit arguments.\n* An alternation pattern `p1 | p2 | p3`, which matches an inductive type with multiple constructors,\n  or a nested disjunction like `a ∨ b ∨ c`.\n\nA pattern like `⟨a, b, c⟩ | ⟨d, e⟩` will do a split over the inductive datatype,\nnaming the first three parameters of the first constructor as `a,b,c` and the\nfirst two of the second constructor `d,e`. If the list is not as long as the\nnumber of arguments to the constructor or the number of constructors, the\nremaining variables will be automatically named. If there are nested brackets\nsuch as `⟨⟨a⟩, b | c⟩ | d` then these will cause more case splits as necessary.\nIf there are too many arguments, such as `⟨a, b, c⟩` for splitting on\n`∃ x, ∃ y, p x`, then it will be treated as `⟨a, ⟨b, c⟩⟩`, splitting the last\nparameter as necessary.\n\n`rcases` also has special support for quotient types: quotient induction into Prop works like\nmatching on the constructor `quot.mk`.\n\n`rcases h : e with PAT` will do the same as `rcases e with PAT` with the exception that an\nassumption `h : e = PAT` will be added to the context.\n</code>",
+ "34":
+ "<code>MeasureTheory.integral.{u_6, u_7} {α : Type u_6} {G : Type u_7} [NormedAddCommGroup G] [NormedSpace ℝ G]\n  {x✝ : MeasurableSpace α} (μ : MeasureTheory.Measure α) (f : α → G) : G</code><span class=\"sep\"></span><code class=\"docstring\">The Bochner integral </code>",
+ "339":
+ "<code>Tendsto (fun t =&gt; ∫ (y : ℝ), heatKernel α (x - y) t * (g y - g x)) (𝓝[&gt;] 0) (𝓝 0)</code>",
+ "338":
+ "<code>∀ᶠ (t : ℝ) in 𝓝[&gt;] 0, Integrable (fun y =&gt; heatKernel α (x - y) t) volume</code>",
+ "337": "<code>Integrable g volume</code>",
+ "336":
+ "<code>Continuous.{u, v} {X : Type u} {Y : Type v} [TopologicalSpace X] [TopologicalSpace Y] (f : X → Y) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A function between topological spaces is continuous if the preimage\nof every open set is open. Registered as a structure to make sure it is not unfolded by Lean. </code>",
+ "335": "<code>Continuous g</code>",
+ "334": "<code>IsBoundedAbs g</code>",
+ "333":
+ "<code>Chapter7.heatKernel_IVP_limit {α : ℝ} (g : ℝ → ℝ) (x B : ℝ) (hα : 0 &lt; α) (hB_const : 0 ≤ B) (g_bounded : IsBoundedAbs g)\n  (g_cont : Continuous g) (g_int : Integrable g volume) :\n  Tendsto (fun t =&gt; heatConvolutionHK α g x t) (𝓝[&gt;] 0) (𝓝 (g x))</code>",
+ "332": "<code>0 ≤ ∫ (z : ℝ), |z| ^ 2 * Real.exp (-z ^ 2)</code>",
+ "331":
+ "<code>Tendsto (fun R =&gt; ∫ (z : ℝ), {z | R ≤ |z|}.indicator (fun z =&gt; Real.exp (-z ^ 2)) z) atTop (𝓝 0)</code>",
+ "330":
+ "<code>MeasureTheory.Integrable.const_mul.{u_1, u_8} {α : Type u_1} {m : MeasurableSpace α} {μ : Measure α} {𝕜 : Type u_8}\n  [NormedRing 𝕜] {f : α → 𝕜} (h : Integrable f μ) (c : 𝕜) : Integrable (fun x =&gt; c * f x) μ</code>",
+ "33":
+ "<code>Chapter7.integral_heatKernel_one_gaussian (α t : ℝ) (hα : 0 &lt; α) (ht : 0 &lt; t) : ∫ (x : ℝ), heatKernel α x t = 1</code><span class=\"sep\"></span><code class=\"docstring\">Heat–kernel normalization via the (parametric) Gaussian integral:\nfor `α &gt; 0`, `t &gt; 0`, we have `∫ ℝ K_{α,t}(x) dx = 1`. </code>",
+ "329":
+ "<code>Integrable (fun z =&gt; |z| ^ 2 * Real.exp (-z ^ 2)) volume</code>",
+ "328":
+ "<code>Integrable (fun z =&gt; 1 / R ^ 2 * (|z| ^ 2 * Real.exp (-z ^ 2))) volume</code>",
+ "327":
+ "<code>Integrable (fun z =&gt; {z | R ≤ |z|}.indicator (fun z =&gt; Real.exp (-z ^ 2)) z) volume</code>",
+ "326":
+ "<code>IsClosed.measurableSet.{u_1} {α : Type u_1} {s : Set α} [TopologicalSpace α] [MeasurableSpace α]\n  [OpensMeasurableSpace α] (h : IsClosed s) : MeasurableSet s</code>",
+ "325":
+ "<code>continuous_abs.{u_1} {G : Type u_1} [TopologicalSpace G] [AddCommGroup G] [LinearOrder G] [IsOrderedAddMonoid G]\n  [OrderTopology G] : Continuous abs</code>",
+ "324":
+ "<code>continuous_const.{u_1, u_2} {X : Type u_1} {Y : Type u_2} [TopologicalSpace X] [TopologicalSpace Y] {y : Y} :\n  Continuous fun x =&gt; y</code>",
+ "323":
+ "<code>isClosed_le.{u, v} {α : Type u} {β : Type v} [TopologicalSpace α] [Preorder α] [t : OrderClosedTopology α]\n  [TopologicalSpace β] {f g : β → α} (hf : Continuous f) (hg : Continuous g) : IsClosed {b | f b ≤ g b}</code>",
+ "322":
+ "<code>MeasurableSet.{u_1} {α : Type u_1} [MeasurableSpace α] (s : Set α) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`MeasurableSet s` means that `s` is measurable (in the ambient measure space on `α`) </code>",
+ "321": "<code>MeasurableSet {z | R ≤ |z|}</code>",
+ "320":
+ "<code>Set.indicator_of_notMem.{u_1, u_3} {α : Type u_1} {M : Type u_3} [Zero M] {s : Set α} {a : α} (h : a ∉ s) (f : α → M) :\n  s.indicator f a = 0</code>",
+ "32": "<code>Real.exp_pos (x : ℝ) : 0 &lt; Real.exp x</code>",
+ "319": "<code>0 ≤ 1 / R ^ 2 * (|z| ^ 2 * Real.exp (-z ^ 2))</code>",
+ "318":
+ "<code>mul_nonneg.{u_1} {α : Type u_1} [MulZeroClass α] {a b : α} [Preorder α] [PosMulMono α] (ha : 0 ≤ a) (hb : 0 ≤ b) :\n  0 ≤ a * b</code><span class=\"sep\"></span><code class=\"docstring\">**Alias** of `Left.mul_nonneg`.\n\n---\n\nAssumes left covariance. </code>",
+ "317": "<code>0 ≤ |z|</code>",
+ "316":
+ "<code>abs_nonneg.{u_1} {α : Type u_1} [Lattice α] [AddGroup α] [AddLeftMono α] [AddRightMono α] (a : α) : 0 ≤ |a|</code>",
+ "315": "<code>0 ≤ |z| ^ 2</code>",
+ "314":
+ "<code>inv_nonneg.{u_3} {G₀ : Type u_3} [GroupWithZero G₀] [PartialOrder G₀] [PosMulReflectLT G₀] {a : G₀} : 0 ≤ a⁻¹ ↔ 0 ≤ a</code>",
+ "313": "<code>0 ≤ 1 / R ^ 2</code>",
+ "312": "<code>z ∉ {z | R ≤ |z|}</code>",
+ "311": "<code>Real.exp (-z ^ 2) ≤ |z| ^ 2 / R ^ 2 * Real.exp (-z ^ 2)</code>",
+ "310":
+ "<code>Set.indicator_of_mem.{u_1, u_3} {α : Type u_1} {M : Type u_3} [Zero M] {s : Set α} {a : α} (h : a ∈ s) (f : α → M) :\n  s.indicator f a = f a</code>",
+ "31": "<code>0 &lt; Real.exp (-x ^ 2 / (4 * α * t))</code>",
+ "309":
+ "<code>mul_le_mul_of_nonneg_right.{u_1} {α : Type u_1} [Mul α] [Zero α] [Preorder α] {a b c : α} [MulPosMono α] (h : b ≤ c)\n  (a0 : 0 ≤ a) : b * a ≤ c * a</code>",
+ "308": "<code>0 ≤ Real.exp (-z ^ 2)</code>",
+ "307": "<code>1 ≤ |z| ^ 2 / R ^ 2</code>",
+ "306": "<code>0 &lt; R * R</code>",
+ "305": "<code>0 &lt; R ^ 2</code>",
+ "304":
+ "<code>sq_le_sq.{u_1} {α : Type u_1} [Ring α] [LinearOrder α] [IsStrictOrderedRing α] {a b : α} : a ^ 2 ≤ b ^ 2 ↔ |a| ≤ |b|</code>",
+ "303":
+ "<code>LT.lt.le.{u_1} {α : Type u_1} [Preorder α] {a b : α} (hab : a &lt; b) : a ≤ b</code><span class=\"sep\"></span><code class=\"docstring\">**Alias** of `le_of_lt`.</code>",
+ "302": "<code>|R| ≤ |z|</code>",
+ "301": "<code>R ^ 2 ≤ |z| ^ 2</code>",
+ "300":
+ "<code>Set.mem_setOf_eq.{u} {α : Type u} {x : α} {p : α → Prop} : (x ∈ {y | p y}) = p x</code>",
+ "30":
+ "<code>inv_pos.{u_3} {G₀ : Type u_3} [GroupWithZero G₀] [PartialOrder G₀] [PosMulReflectLT G₀] {a : G₀} : 0 &lt; a⁻¹ ↔ 0 &lt; a</code>",
+ "3":
+ "<code>Real : Type</code><span class=\"sep\"></span><code class=\"docstring\">The type `ℝ` of real numbers constructed as equivalence classes of Cauchy sequences of rational\nnumbers. </code>",
+ "299": "<code>z ∈ {z | R ≤ |z|}</code>",
+ "298":
+ "<code>Not (a : Prop) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`Not p`, or `¬p`, is the negation of `p`. It is defined to be `p → False`,\nso if your goal is `¬p` you can use `intro h` to turn the goal into\n`h : p ⊢ False`, and if you have `hn : ¬p` and `h : p` then `hn h : False`\nand `(hn h).elim` will prove anything.\nFor more information: [Propositional Logic](https://lean-lang.org/theorem_proving_in_lean4/propositions_and_proofs.html#propositional-logic)\n\n\nConventions for notations in identifiers:\n\n * The recommended spelling of `¬` in identifiers is `not`.</code>",
+ "297": "<code>¬R ≤ |z|</code>",
+ "296": "<code>R ≤ |z|</code>",
+ "295":
+ "<code class=\"docstring\">`by_cases (h :)? p` splits the main goal into two cases, assuming `h : p` in the first branch, and `h : ¬ p` in the second branch.\n</code>",
+ "294":
+ "<code>∀ (z : ℝ), {z | R ≤ |z|}.indicator (fun z =&gt; Real.exp (-z ^ 2)) z ≤ 1 / R ^ 2 * (|z| ^ 2 * Real.exp (-z ^ 2))</code>",
+ "293":
+ "<code>lt_of_lt_of_le.{u_1} {α : Type u_1} [Preorder α] {a b c : α} (hab : a &lt; b) (hbc : b ≤ c) : a &lt; c</code>",
+ "292": "<code>0 &lt; R</code>",
+ "291":
+ "<code>GE.ge.{u} {α : Type u} [LE α] (a b : α) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`a ≥ b` is an abbreviation for `b ≤ a`. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `≥` in identifiers is `ge`.\n\n * The recommended spelling of `&gt;=` in identifiers is `ge` (prefer `≥` over `&gt;=`).</code>",
+ "290": "<code>R ≥ 1</code>",
+ "29":
+ "<code class=\"docstring\">This is a \"finishing\" tactic modification of `simp`. It has two forms.\n\n* `simpa [rules, ⋯] using e` will simplify the goal and the type of\n`e` using `rules`, then try to close the goal using `e`.\n\nSimplifying the type of `e` makes it more likely to match the goal\n(which has also been simplified). This construction also tends to be\nmore robust under changes to the simp lemma set.\n\n* `simpa [rules, ⋯]` will simplify the goal and the type of a\nhypothesis `this` if present in the context, then try to close the goal using\nthe `assumption` tactic.\n</code>",
+ "289":
+ "<code>Exists.intro.{u} {α : Sort u} {p : α → Prop} (w : α) (h : p w) : Exists p</code><span class=\"sep\"></span><code class=\"docstring\">Existential introduction. If `a : α` and `h : p a`,\nthen `⟨a, h⟩` is a proof that `∃ x : α, p x`. </code>",
+ "288":
+ "<code>Filter.eventually_atTop.{u_3} {α : Type u_3} [Preorder α] [IsDirected α fun x1 x2 =&gt; x1 ≤ x2] {p : α → Prop}\n  [Nonempty α] : (∀ᶠ (x : α) in atTop, p x) ↔ ∃ a, ∀ b ≥ a, p b</code>",
+ "287":
+ "<code>Filter.atTop.{u_3} {α : Type u_3} [Preorder α] : Filter α</code><span class=\"sep\"></span><code class=\"docstring\">`atTop` is the filter representing the limit `→ ∞` on an ordered set.\nIt is generated by the collection of up-sets `{b | a ≤ b}`.\n(The preorder need not have a top element for this to be well defined,\nand indeed is trivial when a top element exists.) </code>",
+ "286":
+ "<code>∀ᶠ (R : ℝ) in atTop,\n  ∫ (z : ℝ), {z | R ≤ |z|}.indicator (fun z =&gt; Real.exp (-z ^ 2)) z ≤ 1 / R ^ 2 * ∫ (z : ℝ), |z| ^ 2 * Real.exp (-z ^ 2)</code>",
+ "285": "<code>t ∈ Set.Ioi 0</code>",
+ "284":
+ "<code>Set.Ioi.{u_1} {α : Type u_1} [Preorder α] (a : α) : Set α</code><span class=\"sep\"></span><code class=\"docstring\">`Ioi a` is the left-open right-infinite interval $(a, ∞)$. </code>",
+ "283":
+ "<code>Membership.mem.{u, v} {α : outParam (Type u)} {γ : Type v} [self : Membership α γ] : γ → α → Prop</code><span class=\"sep\"></span><code class=\"docstring\">The membership relation `a ∈ s : Prop` where `a : α`, `s : γ`. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `∈` in identifiers is `mem`.</code>",
+ "282":
+ "<code>Filter.Eventually.{u_1} {α : Type u_1} (p : α → Prop) (f : Filter α) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`f.Eventually p` or `∀ᶠ x in f, p x` mean that `{x | p x} ∈ f`. E.g., `∀ᶠ x in atTop, p x`\nmeans that `p` holds true for sufficiently large `x`. </code>",
+ "281":
+ "<code>eventually_nhdsWithin_iff.{u_1} {α : Type u_1} [TopologicalSpace α] {a : α} {s : Set α} {p : α → Prop} :\n  (∀ᶠ (x : α) in 𝓝[s] a, p x) ↔ ∀ᶠ (x : α) in 𝓝 a, x ∈ s → p x</code>",
+ "280":
+ "<code class=\"docstring\">`f.Eventually p` or `∀ᶠ x in f, p x` mean that `{x | p x} ∈ f`. E.g., `∀ᶠ x in atTop, p x`\nmeans that `p` holds true for sufficiently large `x`. </code>",
+ "28": "<code>0 &lt; 1 / √(4 * Real.pi * α * t)</code>",
+ "279":
+ "<code>∀ᶠ (t : ℝ) in 𝓝[&gt;] 0,\n  ∫ (y : ℝ), {y | δ ≤ |y - x|}.indicator (fun y =&gt; heatKernel α (x - y) t) y =\n    1 / √Real.pi * ∫ (z : ℝ), {z | δ / √(4 * α * t) ≤ |z|}.indicator (fun z =&gt; Real.exp (-z ^ 2)) z</code>",
+ "278":
+ "<code>nhds.{u_3} {X : Type u_3} [TopologicalSpace X] (x : X) : Filter X</code><span class=\"sep\"></span><code class=\"docstring\">A set is called a neighborhood of `x` if it contains an open set around `x`. The set of all\nneighborhoods of `x` forms a filter, the neighborhood filter at `x`, is here defined as the\ninfimum over the principal filters of all open sets containing `x`. </code>",
+ "277":
+ "<code>nhdsWithin.{u_1} {X : Type u_1} [TopologicalSpace X] (x : X) (s : Set X) : Filter X</code><span class=\"sep\"></span><code class=\"docstring\">The \"neighborhood within\" filter. Elements of `𝓝[s] x` are sets containing the\nintersection of `s` and a neighborhood of `x`. </code>",
+ "276":
+ "<code>Filter.Tendsto.{u_1, u_2} {α : Type u_1} {β : Type u_2} (f : α → β) (l₁ : Filter α) (l₂ : Filter β) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`Filter.Tendsto` is the generic \"limit of a function\" predicate.\n`Tendsto f l₁ l₂` asserts that for every `l₂` neighborhood `a`,\nthe `f`-preimage of `a` is an `l₁` neighborhood. </code>",
+ "275": "<code>0 &lt; δ</code>",
+ "274":
+ "<code>Chapter7.heatKernel_tail_tendsto_zero {α δ x : ℝ} (hα : 0 &lt; α) (hδ : 0 &lt; δ) :\n  Tendsto (fun t =&gt; ∫ (y : ℝ), {y | δ ≤ |y - x|}.indicator (fun y =&gt; heatKernel α (x - y) t) y) (𝓝[&gt;] 0) (𝓝 0)</code>",
+ "273": "<code>Chapter7.IsBoundedAbs (g : ℝ → ℝ) : Prop</code>",
+ "272":
+ "<code>setOf.{u} {α : Type u} (p : α → Prop) : Set α</code><span class=\"sep\"></span><code class=\"docstring\">Turn a predicate `p : α → Prop` into a set, also written as `{x | p x}` </code>",
+ "271":
+ "<code>Set.indicator.{u_1, u_3} {α : Type u_1} {M : Type u_3} [Zero M] (s : Set α) (f : α → M) (x : α) : M</code><span class=\"sep\"></span><code class=\"docstring\">`Set.indicator s f a` is `f a` if `a ∈ s`, `0` otherwise. </code>",
+ "270":
+ "<code>Chapter7.heatTail_changeOfVariables {α x δ t : ℝ} (hα : 0 &lt; α) (ht : 0 &lt; t) :\n  ∫ (y : ℝ), {y | δ ≤ |y - x|}.indicator (fun y =&gt; heatKernel α (x - y) t) y =\n    1 / √Real.pi * ∫ (z : ℝ), {z | δ / √(4 * α * t) ≤ |z|}.indicator (fun z =&gt; Real.exp (-z ^ 2)) z</code><span class=\"sep\"></span><code class=\"docstring\">Change of variables for the heat-kernel tail.\n`z = (x - y)/√(4 α t)`.  Valid for `α&gt;0, t&gt;0`. </code>",
+ "27":
+ "<code>Iff.mpr {a b : Prop} (self : a ↔ b) : b → a</code><span class=\"sep\"></span><code class=\"docstring\">Modus ponens for if and only if, reversed. If `a ↔ b` and `b`, then `a`. </code>",
+ "269": "<code>|heatConvolutionHK α g x t| ≤ 1 * B</code>",
+ "268": "<code>∫ (y : ℝ), heatKernel α (x - y) t = 1</code>",
+ "267":
+ "<code>|heatConvolutionHK α g x t| ≤ (∫ (y : ℝ), heatKernel α (x - y) t) * B</code>",
+ "266":
+ "<code>MeasureTheory.integral_const_mul.{u_1, u_6} {α : Type u_1} {m : MeasurableSpace α} {μ : Measure α} {L : Type u_6}\n  [RCLike L] (r : L) (f : α → L) : ∫ (a : α), r * f a ∂μ = r * ∫ (a : α), f a ∂μ</code>",
+ "265":
+ "<code>∫ (y : ℝ), heatKernel α (x - y) t * B = (∫ (y : ℝ), heatKernel α (x - y) t) * B</code>",
+ "264":
+ "<code>MeasureTheory.ae.{u_1, u_3} {α : Type u_1} {F : Type u_3} [FunLike F (Set α) ENNReal] [OuterMeasureClass F α] (μ : F) :\n  Filter α</code><span class=\"sep\"></span><code class=\"docstring\">The “almost everywhere” filter of co-null sets. </code>",
+ "263":
+ "<code>Filter.EventuallyLE.{u_1, u_2} {α : Type u_1} {β : Type u_2} [LE β] (l : Filter α) (f g : α → β) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A function `f` is eventually less than or equal to a function `g` at a filter `l`. </code>",
+ "262":
+ "<code>MeasureTheory.integral_mono_ae.{u_1, u_2} {α : Type u_1} {E : Type u_2} [NormedAddCommGroup E] [hE : CompleteSpace E]\n  [NormedSpace ℝ E] {m : MeasurableSpace α} {μ : Measure α} [PartialOrder E] [IsOrderedAddMonoid E] [OrderedSMul ℝ E]\n  [OrderClosedTopology E] {f g : α → E} (hf : Integrable f μ) (hg : Integrable g μ) (h : f ≤ᶠ[ae μ] g) :\n  ∫ (x : α), f x ∂μ ≤ ∫ (x : α), g x ∂μ</code>",
+ "261":
+ "<code>∫ (y : ℝ), heatKernel α (x - y) t * |g y| ≤ ∫ (y : ℝ), heatKernel α (x - y) t * B</code>",
+ "260":
+ "<code>MeasureTheory.Integrable.mono'.{u_1, u_2} {α : Type u_1} {β : Type u_2} {m : MeasurableSpace α} {μ : Measure α}\n  [NormedAddCommGroup β] {f : α → β} {g : α → ℝ} (hg : Integrable g μ) (hf : AEStronglyMeasurable f μ)\n  (h : ∀ᵐ (a : α) ∂μ, ‖f a‖ ≤ g a) : Integrable f μ</code>",
+ "26": "<code>Real.sqrt_pos {x : ℝ} : 0 &lt; √x ↔ 0 &lt; x</code>",
+ "259":
+ "<code>Integrable (fun y =&gt; heatKernel α (x - y) t * |g y|) volume</code>",
+ "258":
+ "<code>abs_mul.{u_1} {α : Type u_1} [Ring α] [LinearOrder α] [IsOrderedRing α] (a b : α) : |a * b| = |a| * |b|</code>",
+ "257": "<code>Real.norm_eq_abs (r : ℝ) : ‖r‖ = |r|</code>",
+ "256":
+ "<code>mul_le_mul_of_nonneg_left.{u_1} {α : Type u_1} [Mul α] [Zero α] [Preorder α] {a b c : α} [PosMulMono α] (h : b ≤ c)\n  (a0 : 0 ≤ a) : a * b ≤ a * c</code>",
+ "255":
+ "<code>heatKernel α (x - y) t * |g y| ≤ heatKernel α (x - y) t * B</code>",
+ "254":
+ "<code>Norm.norm.{u_8} {E : Type u_8} [self : Norm E] : E → ℝ</code><span class=\"sep\"></span><code class=\"docstring\">the `ℝ`-valued norm function. </code>",
+ "253":
+ "<code>Filter.Eventually.of_forall.{u} {α : Type u} {p : α → Prop} {f : Filter α} (hp : ∀ (x : α), p x) : ∀ᶠ (x : α) in f, p x</code>",
+ "252":
+ "<code>∀ᵐ (y : ℝ), ‖heatKernel α (x - y) t * |g y|‖ ≤ heatKernel α (x - y) t * B</code>",
+ "251":
+ "<code>MeasureTheory.AEStronglyMeasurable.mul.{u_1, u_2} {α : Type u_1} {β : Type u_2} [TopologicalSpace β]\n  {m m₀ : MeasurableSpace α} {μ : Measure α} {f g : α → β} [Mul β] [ContinuousMul β] (hf : AEStronglyMeasurable f μ)\n  (hg : AEStronglyMeasurable g μ) : AEStronglyMeasurable (f * g) μ</code>",
+ "250":
+ "<code>AEStronglyMeasurable (fun y =&gt; heatKernel α (x - y) t * |g y|) volume</code>",
+ "25":
+ "<code class=\"docstring\">`exact e` closes the main goal if its target type matches that of `e`.\n</code>",
+ "249":
+ "<code>AEMeasurable.aestronglyMeasurable.{u_1, u_2} {α : Type u_1} {β : Type u_2} [TopologicalSpace β] {m₀ : MeasurableSpace α}\n  {μ : Measure α} {f : α → β} [MeasurableSpace β] [TopologicalSpace.PseudoMetrizableSpace β] [OpensMeasurableSpace β]\n  [SecondCountableTopology β] (hf : AEMeasurable f μ) : AEStronglyMeasurable f μ</code><span class=\"sep\"></span><code class=\"docstring\">In a space with second countable topology, measurable implies strongly measurable. </code>",
+ "248":
+ "<code>AEMeasurable.abs.{u_1, u_2} {α : Type u_1} {β : Type u_2} [Lattice α] [AddGroup α] [MeasurableSpace α]\n  [MeasurableSpace β] {f : β → α} [MeasurableNeg α] [MeasurableSup₂ α] {μ : Measure β} (hf : AEMeasurable f μ) :\n  AEMeasurable (fun x =&gt; |f x|) μ</code>",
+ "247": "<code>AEStronglyMeasurable (fun y =&gt; |g y|) volume</code>",
+ "246":
+ "<code>MeasureTheory.Integrable.aestronglyMeasurable.{u_1, u_5} {α : Type u_1} {ε : Type u_5} {m : MeasurableSpace α}\n  {μ : Measure α} [TopologicalSpace ε] [ContinuousENorm ε] {f : α → ε} (hf : Integrable f μ) : AEStronglyMeasurable f μ</code>",
+ "245":
+ "<code>MeasureTheory.AEStronglyMeasurable.{u_1, u_2} {α : Type u_1} {β : Type u_2} [TopologicalSpace β] [m : MeasurableSpace α]\n  {m₀ : MeasurableSpace α} (f : α → β) (μ : Measure α := by volume_tac) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A function is `AEStronglyMeasurable` with respect to a measure `μ` if it is almost everywhere\nequal to the limit of a sequence of simple functions.\n\nOne can specify the sigma-algebra according to which simple functions are taken using the\n`AEStronglyMeasurable[m]` notation in the `MeasureTheory` scope. </code>",
+ "244":
+ "<code>AEStronglyMeasurable (fun y =&gt; heatKernel α (x - y) t) volume</code>",
+ "243":
+ "<code>Integrable (fun y =&gt; heatKernel α (x - y) t * B) volume</code>",
+ "242":
+ "<code>|heatConvolutionHK α g x t| ≤ ∫ (y : ℝ), heatKernel α (x - y) t * |g y|</code>",
+ "241":
+ "<code>abs_of_nonneg.{u_1} {α : Type u_1} [Lattice α] [AddGroup α] {a : α} [AddLeftMono α] (h : 0 ≤ a) : |a| = a</code>",
+ "240": "<code>0 ≤ heatKernel α (x - y) t</code>",
+ "24":
+ "<code>HMul.hMul.{u, v, w} {α : Type u} {β : Type v} {γ : outParam (Type w)} [self : HMul α β γ] : α → β → γ</code><span class=\"sep\"></span><code class=\"docstring\">`a * b` computes the product of `a` and `b`.\nThe meaning of this notation is type-dependent. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `*` in identifiers is `mul`.</code>",
+ "239":
+ "<code>(fun y =&gt; |heatKernel α (x - y) t| * |g y|) = fun y =&gt; heatKernel α (x - y) t * |g y|</code>",
+ "238":
+ "<code>MeasureTheory.abs_integral_le_integral_abs.{u_1} {α : Type u_1} {m : MeasurableSpace α} {μ : Measure α} {f : α → ℝ} :\n  |∫ (a : α), f a ∂μ| ≤ ∫ (a : α), |f a| ∂μ</code>",
+ "237":
+ "<code>|heatConvolutionHK α g x t| ≤ ∫ (y : ℝ), |heatKernel α (x - y) t * g y|</code>",
+ "236":
+ "<code>LE.le.trans.{u_1} {α : Type u_1} [Preorder α] {a b c : α} : a ≤ b → b ≤ c → a ≤ c</code><span class=\"sep\"></span><code class=\"docstring\">**Alias** of `le_trans`.\n\n---\n\nThe relation `≤` on a preorder is transitive. </code>",
+ "235": "<code>0 ≤ |g 0|</code>",
+ "234": "<code>0 ≤ B</code>",
+ "233": "<code>∀ (z : ℝ), 0 ≤ heatKernel α z t</code>",
+ "232":
+ "<code>LE.le.{u} {α : Type u} [self : LE α] : α → α → Prop</code><span class=\"sep\"></span><code class=\"docstring\">The less-equal relation: `x ≤ y` \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `≤` in identifiers is `le`.\n\n * The recommended spelling of `&lt;=` in identifiers is `le` (prefer `≤` over `&lt;=`).</code>",
+ "231":
+ "<code>abs.{u_1} {α : Type u_1} [Lattice α] [AddGroup α] (a : α) : α</code><span class=\"sep\"></span><code class=\"docstring\">`abs a`, denoted `|a|`, is the absolute value of `a` </code>",
+ "230": "<code>∀ (y : ℝ), |g y| ≤ B</code>",
+ "23": "<code></code>",
+ "229":
+ "<code>AEMeasurable.{u_1, u_2} {α : Type u_1} {β : Type u_2} [MeasurableSpace β] {_m : MeasurableSpace α} (f : α → β)\n  (μ : Measure α := by volume_tac) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A function is almost everywhere measurable if it coincides almost everywhere with a measurable\nfunction. </code>",
+ "228": "<code>AEMeasurable g volume</code>",
+ "227":
+ "<code>Chapter7.heat_maximum_principle {g : ℝ → ℝ} (x : ℝ) {α t B : ℝ} (hα : 0 &lt; α) (ht : 0 &lt; t)\n  (hg_meas : AEMeasurable g volume) (hBound : ∀ (y : ℝ), |g y| ≤ B) : |heatConvolutionHK α g x t| ≤ B</code>",
+ "226":
+ "<code>ContinuousLinearMap.mul.{u_1, u_3} (𝕜 : Type u_1) [NontriviallyNormedField 𝕜] (R : Type u_3) [NonUnitalSeminormedRing R]\n  [NormedSpace 𝕜 R] [IsScalarTower 𝕜 R R] [SMulCommClass 𝕜 R R] : R →L[𝕜] R →L[𝕜] R</code><span class=\"sep\"></span><code class=\"docstring\">Multiplication in a non-unital normed algebra as a continuous bilinear map. </code>",
+ "225": "<code>Chapter7.Lmul : ℝ →L[ℝ] ℝ →L[ℝ] ℝ</code>",
+ "224":
+ "<code>Chapter7.heatConvolutionHK (α : ℝ) (g : ℝ → ℝ) (x t : ℝ) : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">**Maximum principle for convolution with a nonnegative unit-mass kernel**\n\nAssume:\n\n* `t &gt; 0`;\n* the product and the kernel are integrable:\n  `Integrable (fun y ↦ Φ (x - y) t * g y)` and `Integrable (fun y ↦ Φ (x - y) t)`;\n* the initial datum is bounded by `B`: `|g y| ≤ B` for all `y`.\n\nThen `|u(x,t)| ≤ B`, where `u = heatConvolution Φ g`.\n\nThis is the precise Lean 4 formalization of the book’s calculation\n`|u| ≤ ∫ Φ |g| ≤ B ∫ Φ = B`.\n</code>",
+ "223": "<code>∫ (y : ℝ), heatKernel α y t = 1</code>",
+ "222":
+ "<code>MeasureTheory.integral_add_left_eq_self.{u_4, u_5} {G : Type u_4} {E : Type u_5} [MeasurableSpace G]\n  [NormedAddCommGroup E] [NormedSpace ℝ E] {μ : Measure G} [AddGroup G] [MeasurableAdd G] [μ.IsAddLeftInvariant]\n  (f : G → E) (g : G) : ∫ (x : G), f (g + x) ∂μ = ∫ (x : G), f x ∂μ</code><span class=\"sep\"></span><code class=\"docstring\">Translating a function by left-addition does not change its integral with respect to a\nleft-invariant measure. </code>",
+ "221":
+ "<code>∫ (y : ℝ), heatKernel α (y - x) t = ∫ (y : ℝ), heatKernel α y t</code>",
+ "220": "<code>Integrable (fun y =&gt; heatKernel α (y - x) t) volume</code>",
+ "22": "<code>0 &lt; 4 * Real.pi * α * t</code>",
+ "219":
+ "<code>add_assoc.{u_1} {G : Type u_1} [AddSemigroup G] (a b c : G) : a + b + c = a + (b + c)</code>",
+ "218":
+ "<code>add_left_comm.{u_3} {G : Type u_3} [AddCommSemigroup G] (a b c : G) : a + (b + c) = b + (a + c)</code>",
+ "217":
+ "<code>add_comm.{u_1} {G : Type u_1} [AddCommMagma G] (a b : G) : a + b = b + a</code>",
+ "216":
+ "<code>(fun y =&gt; heatKernel α (x - y) t) = fun y =&gt; heatKernel α (y - x) t</code>",
+ "215": "<code>Integrable (fun y =&gt; heatKernel α (x - y) t) volume</code>",
+ "214":
+ "<code>MeasureTheory.integral.{u_6, u_7} {α : Type u_6} {G : Type u_7} [NormedAddCommGroup G] [NormedSpace ℝ G]\n  {x✝ : MeasurableSpace α} (μ : Measure α) (f : α → G) : G</code><span class=\"sep\"></span><code class=\"docstring\">The Bochner integral </code>",
+ "213":
+ "<code>Chapter7.heatKernel_mass_one_x_sub_y_even {α t : ℝ} (x : ℝ) (hα : 0 &lt; α) (ht : 0 &lt; t) :\n  ∫ (y : ℝ), heatKernel α (x - y) t = 1</code>",
+ "212":
+ "<code>Chapter7.heatKernel_even {α t : ℝ} (z : ℝ) : heatKernel α (-z) t = heatKernel α z t</code>",
+ "211":
+ "<code>Integrable (fun y =&gt; c * Real.exp (-(1 / (4 * α * t)) * (x - y) ^ 2)) volume</code>",
+ "210":
+ "<code>MeasureTheory.Integrable.smul.{u_1, u_2, u_8} {α : Type u_1} {β : Type u_2} {m : MeasurableSpace α} {μ : Measure α}\n  [NormedAddCommGroup β] {𝕜 : Type u_8} [NormedAddCommGroup 𝕜] [SMulZeroClass 𝕜 β] [IsBoundedSMul 𝕜 β] (c : 𝕜)\n  {f : α → β} (hf : Integrable f μ) : Integrable (c • f) μ</code>",
+ "21":
+ "<code>mul_pos.{u_1} {α : Type u_1} [MulZeroClass α] {a b : α} [Preorder α] [PosMulStrictMono α] (ha : 0 &lt; a) (hb : 0 &lt; b) :\n  0 &lt; a * b</code><span class=\"sep\"></span><code class=\"docstring\">**Alias** of `Left.mul_pos`.\n\n---\n\nAssumes left covariance. </code>",
+ "209":
+ "<code>(fun y =&gt; Real.exp (-b * (x - y) ^ 2)) = fun y =&gt; Real.exp (-b * (y - x) ^ 2)</code>",
+ "208":
+ "<code>Integrable (fun y =&gt; Real.exp (-b * (x - y) ^ 2)) volume</code>",
+ "207":
+ "<code>MeasureTheory.Integrable.comp_add_right.{u_4, u_6} {G : Type u_4} {F : Type u_6} [MeasurableSpace G]\n  [NormedAddCommGroup F] {μ : Measure G} [AddGroup G] [MeasurableAdd G] {f : G → F} [μ.IsAddRightInvariant]\n  (hf : Integrable f μ) (g : G) : Integrable (fun t =&gt; f (t + g)) μ</code>",
+ "206":
+ "<code>integrable_exp_neg_mul_sq {b : ℝ} (hb : 0 &lt; b) : Integrable (fun x =&gt; Real.exp (-b * x ^ 2)) volume</code>",
+ "205":
+ "<code>sub_eq_add_neg.{u_1} {G : Type u_1} [SubNegMonoid G] (a b : G) : a - b = a + -b</code><span class=\"sep\"></span><code class=\"docstring\">Subtracting an element is the same as adding by its negative.\nThis is a duplicate of `SubNegMonoid.sub_eq_add_neg` ensuring that the types unfold better. </code>",
+ "204":
+ "<code>Integrable (fun y =&gt; Real.exp (-(1 / (4 * α * t)) * (y - x) ^ 2)) volume</code>",
+ "203":
+ "<code>one_div_pos.{u_3} {G₀ : Type u_3} [GroupWithZero G₀] [PartialOrder G₀] [PosMulReflectLT G₀] {a : G₀} : 0 &lt; 1 / a ↔ 0 &lt; a</code>",
+ "202": "<code>0 &lt; 4 * α</code>",
+ "201": "<code>0 &lt; b</code>",
+ "200":
+ "<code class=\"docstring\">The `let` tactic is for adding definitions to the local context of the main goal.\n* `let x : t := e` adds the definition `x : t := e` if `e` is a term of type `t`.\n* `let x := e` uses the type of `e` for `t`.\n* `let : t := e` and `let := e` use `this` for the name of the hypothesis.\n* `let pat := e` for a pattern `pat` is equivalent to `match e with | pat =&gt; _`,\n  where `_` stands for the tactics that follow this one.\n  It is convenient for types that let only one applicable constructor.\n  For example, given `p : α × β × γ`, `let ⟨x, y, z⟩ := p` produces the\n  local variables `x : α`, `y : β`, and `z : γ`.\n* The syntax `let (eq := h) pat := e` is equivalent to `match h : e with | pat =&gt; _`,\n  which adds the equation `h : e = pat` to the local context.\n\nThe tactic supports all the same syntax variants and options as the `let` term.\n</code>",
+ "20": "<code>0 &lt; √(4 * Real.pi * α * t)</code>",
+ "2": "<code>ℝ</code>",
+ "199":
+ "<code>MeasureTheory.MeasureSpace.volume.{u_6} {α : Type u_6} [self : MeasureSpace α] : Measure α</code><span class=\"sep\"></span><code class=\"docstring\">`volume` is the canonical measure on `α`. </code>",
+ "198":
+ "<code>MeasureTheory.Integrable.{u_5, u_8} {ε : Type u_5} [TopologicalSpace ε] [ContinuousENorm ε] {α : Type u_8}\n  {x✝ : MeasurableSpace α} (f : α → ε) (μ : Measure α := by volume_tac) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`Integrable f μ` means that `f` is measurable and that the integral `∫⁻ a, ‖f a‖ ∂μ` is finite.\n`Integrable f` means `Integrable f volume`. </code>",
+ "197":
+ "<code>Chapter7.integrable_heatKernel_slice {α t : ℝ} (hα : 0 &lt; α) (ht : 0 &lt; t) (x : ℝ) :\n  Integrable (fun y =&gt; heatKernel α (x - y) t) volume</code>",
+ "196":
+ "<code class=\"docstring\">Tactic for evaluating expressions in *commutative* (semi)rings, allowing for variables in the\nexponent. If the goal is not appropriate for `ring` (e.g. not an equality) `ring_nf` will be\nsuggested.\n\n* `ring!` will use a more aggressive reducibility setting to determine equality of atoms.\n* `ring1` fails if the target is not an equality.\n\nFor example:\n```\nexample (n : ℕ) (m : ℤ) : 2^(n+1) * m = 2 * 2^n * m := by ring\nexample (a b : ℤ) (n : ℕ) : (a + b)^(n + 2) = (a^2 + b^2 + a * b + b * a) * (a + b)^n := by ring\nexample (x y : ℕ) : x + id y = y + id x := by ring!\nexample (x : ℕ) (h : x * 2 &gt; 5): x + x &gt; 5 := by ring; assumption -- suggests ring_nf\n```\n</code>",
+ "195":
+ "<code>Chapter7.sq_sub_comm (x y : ℝ) : (y - x) ^ 2 = (x - y) ^ 2</code>",
+ "194":
+ "<code>maxHeartbeats</code><span class=\"sep\"></span><code class=\"docstring\">maximum amount of heartbeats per command. A heartbeat is number of (small) memory allocations (in thousands), 0 means no limit</code>",
+ "193":
+ "<code class=\"docstring\">`set_option &lt;id&gt; &lt;value&gt;` sets the option `&lt;id&gt;` to `&lt;value&gt;`. Depending on the type of the option,\nthe value can be `true`, `false`, a string, or a numeral. Options are used to configure behavior of\nLean as well as user-defined extensions. The setting is active until the end of the current `section`\nor `namespace` or the end of the file.\nAuto-completion is available for `&lt;id&gt;` to list available options.\n\n`set_option &lt;id&gt; &lt;value&gt; in &lt;command&gt;` sets the option for just a single command:\n```\nset_option pp.all true in\n#check 1 + 1\n```\nSimilarly, `set_option &lt;id&gt; &lt;value&gt; in` can also be used inside terms and tactics to set an option\nonly in a single term or tactic.\n</code>",
+ "192":
+ "<code class=\"docstring\">Makes names from other namespaces visible without writing the namespace prefix.\n\nNames that are made available with `open` are visible within the current `section` or `namespace`\nblock. This makes referring to (type) definitions and theorems easier, but note that it can also\nmake [scoped instances], notations, and attributes from a different namespace available.\n\nThe `open` command can be used in a few different ways:\n\n* `open Some.Namespace.Path1 Some.Namespace.Path2` makes all non-protected names in\n  `Some.Namespace.Path1` and `Some.Namespace.Path2` available without the prefix, so that\n  `Some.Namespace.Path1.x` and `Some.Namespace.Path2.y` can be referred to by writing only `x` and\n  `y`.\n\n* `open Some.Namespace.Path hiding def1 def2` opens all non-protected names in `Some.Namespace.Path`\n  except `def1` and `def2`.\n\n* `open Some.Namespace.Path (def1 def2)` only makes `Some.Namespace.Path.def1` and\n  `Some.Namespace.Path.def2` available without the full prefix, so `Some.Namespace.Path.def3` would\n  be unaffected.\n\n  This works even if `def1` and `def2` are `protected`.\n\n* `open Some.Namespace.Path renaming def1 → def1', def2 → def2'` same as `open Some.Namespace.Path\n  (def1 def2)` but `def1`/`def2`'s names are changed to `def1'`/`def2'`.\n\n  This works even if `def1` and `def2` are `protected`.\n\n* `open scoped Some.Namespace.Path1 Some.Namespace.Path2` **only** opens [scoped instances],\n  notations, and attributes from `Namespace1` and `Namespace2`; it does **not** make any other name\n  available.\n\n* `open &lt;any of the open shapes above&gt; in` makes the names `open`-ed visible only in the next\n  command or expression.\n\n[scoped instance]: https://lean-lang.org/theorem_proving_in_lean4/type_classes.html#scoped-instances\n(Scoped instances in Theorem Proving in Lean)\n\n\n## Examples\n\n```lean\n/-- SKI combinators https://en.wikipedia.org/wiki/SKI_combinator_calculus -/\nnamespace Combinator.Calculus\n  def I (a : α) : α := a\n  def K (a : α) : β → α := fun _ =&gt; a\n  def S (x : α → β → γ) (y : α → β) (z : α) : γ := x z (y z)\nend Combinator.Calculus\n\nsection\n  -- open everything under `Combinator.Calculus`, *i.e.* `I`, `K` and `S`,\n  -- until the section ends\n  open Combinator.Calculus\n\n  theorem SKx_eq_K : S K x = I := rfl\nend\n\n-- open everything under `Combinator.Calculus` only for the next command (the next `theorem`, here)\nopen Combinator.Calculus in\ntheorem SKx_eq_K' : S K x = I := rfl\n\nsection\n  -- open only `S` and `K` under `Combinator.Calculus`\n  open Combinator.Calculus (S K)\n\n  theorem SKxy_eq_y : S K x y = y := rfl\n\n  -- `I` is not in scope, we have to use its full path\n  theorem SKxy_eq_Iy : S K x y = Combinator.Calculus.I y := rfl\nend\n\nsection\n  open Combinator.Calculus\n    renaming\n      I → identity,\n      K → konstant\n\n  #check identity\n  #check konstant\nend\n\nsection\n  open Combinator.Calculus\n    hiding S\n\n  #check I\n  #check K\nend\n\nsection\n  namespace Demo\n    inductive MyType\n    | val\n\n    namespace N1\n      scoped infix:68 \" ≋ \" =&gt; BEq.beq\n\n      scoped instance : BEq MyType where\n        beq _ _ := true\n\n      def Alias := MyType\n    end N1\n  end Demo\n\n  -- bring `≋` and the instance in scope, but not `Alias`\n  open scoped Demo.N1\n\n  #check Demo.MyType.val == Demo.MyType.val\n  #check Demo.MyType.val ≋ Demo.MyType.val\n  -- #check Alias -- unknown identifier 'Alias'\nend\n```\n</code>",
+ "191":
+ "<code class=\"docstring\">`end` closes a `section` or `namespace` scope. If the scope is named `&lt;id&gt;`, it has to be closed\nwith `end &lt;id&gt;`. The `end` command is optional at the end of a file.\n</code>",
+ "190":
+ "<code>Chapter7.heatConvolution (Φ : ℝ → ℝ → ℝ) (g : ℝ → ℝ) (x t : ℝ) : ℝ</code>",
+ "19": "<code>Real.pi_pos : 0 &lt; Real.pi</code>",
+ "189":
+ "<code class=\"docstring\">The `sorry` term is a temporary placeholder for a missing proof or value.\n\nThe syntax is intended for stubbing-out incomplete parts of a value or proof while still having a syntactically correct skeleton.\nLean will give a warning whenever a declaration uses `sorry`, so you aren't likely to miss it,\nbut you can double check if a declaration depends on `sorry` by looking for `sorryAx` in the output\nof the `#print axioms my_thm` command, the axiom used by the implementation of `sorry`.\n\n\"Go to definition\" on `sorry` in the Infoview will go to the source position where it was introduced, if such information is available.\n\nEach `sorry` is guaranteed to be unique, so for example the following fails:\n```lean\nexample : (sorry : Nat) = sorry := rfl -- fails\n```\n\nSee also the `sorry` tactic, which is short for `exact sorry`.\n</code>",
+ "188":
+ "<code>smul_eq_mul.{u_9} {α : Type u_9} [Mul α] (a b : α) : a • b = a * b</code>",
+ "187":
+ "<code>(fun y =&gt; Φt Φ (x - y) t * g y) = fun y =&gt; κ * (Φxx Φ (x - y) t * g y)</code>",
+ "186":
+ "<code>deriv (fun x' =&gt; deriv (fun z =&gt; U Φ g z t) x') x = ∫ (y : ℝ), Φxx Φ (x - y) t * g y</code>",
+ "185":
+ "<code>deriv (fun x' =&gt; ∫ (y : ℝ), Φx Φ (x' - y) t * g y) x = ∫ (y : ℝ), Φxx Φ (x - y) t * g y</code>",
+ "184":
+ "<code>deriv (fun x' =&gt; deriv (fun z =&gt; U Φ g z t) x') x = deriv (fun x' =&gt; ∫ (y : ℝ), Φx Φ (x' - y) t * g y) x</code>",
+ "183":
+ "<code>(fun x' =&gt; deriv (fun z =&gt; U Φ g z t) x') = fun x' =&gt; ∫ (y : ℝ), Φx Φ (x' - y) t * g y</code>",
+ "182":
+ "<code>deriv (fun τ =&gt; U Φ g x τ) t = ∫ (y : ℝ), Φt Φ (x - y) t * g y</code>",
+ "181":
+ "<code class=\"docstring\">Introduces one or more hypotheses, optionally naming and/or pattern-matching them.\nFor each hypothesis to be introduced, the remaining main goal's target type must\nbe a `let` or function type.\n\n* `intro` by itself introduces one anonymous hypothesis, which can be accessed\n  by e.g. `assumption`.\n* `intro x y` introduces two hypotheses and names them. Individual hypotheses\n  can be anonymized via `_`, or matched against a pattern:\n  ```lean\n  -- ... ⊢ α × β → ...\n  intro (a, b)\n  -- ..., a : α, b : β ⊢ ...\n  ```\n* Alternatively, `intro` can be combined with pattern matching much like `fun`:\n  ```lean\n  intro\n  | n + 1, 0 =&gt; tac\n  | ...\n  ```\n</code>",
+ "180":
+ "<code>HSub.hSub.{u, v, w} {α : Type u} {β : Type v} {γ : outParam (Type w)} [self : HSub α β γ] : α → β → γ</code><span class=\"sep\"></span><code class=\"docstring\">`a - b` computes the difference of `a` and `b`.\nThe meaning of this notation is type-dependent.\n* For natural numbers, this operator saturates at 0: `a - b = 0` when `a ≤ b`. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `-` in identifiers is `sub` (when used as a binary operator).</code>",
+ "18": "<code>0 &lt; Real.pi</code>",
+ "179": "<code>∀ (x t : ℝ), Φt Φ x t = κ * Φxx Φ x t</code>",
+ "178":
+ "<code>∀ (t x : ℝ), HasDerivAt (fun x' =&gt; ∫ (y : ℝ), Φx Φ (x' - y) t * g y) (∫ (y : ℝ), Φxx Φ (x - y) t * g y) x</code>",
+ "177":
+ "<code>∀ (t x : ℝ), HasDerivAt (fun x' =&gt; ∫ (y : ℝ), Φ (x' - y) t * g y) (∫ (y : ℝ), Φx Φ (x - y) t * g y) x</code>",
+ "176":
+ "<code>∀ (x t : ℝ), HasDerivAt (fun τ =&gt; ∫ (y : ℝ), Φ (x - y) τ * g y) (∫ (y : ℝ), Φt Φ (x - y) t * g y) t</code>",
+ "175":
+ "<code>Chapter7.heat_from_convolution {κ : ℝ} {Φ : ℝ → ℝ → ℝ} {g : ℝ → ℝ}\n  (swap_t : ∀ (x t : ℝ), HasDerivAt (fun τ =&gt; ∫ (y : ℝ), Φ (x - y) τ * g y) (∫ (y : ℝ), Φt Φ (x - y) t * g y) t)\n  (swap_x : ∀ (t x : ℝ), HasDerivAt (fun x' =&gt; ∫ (y : ℝ), Φ (x' - y) t * g y) (∫ (y : ℝ), Φx Φ (x - y) t * g y) x)\n  (swap_xx : ∀ (t x : ℝ), HasDerivAt (fun x' =&gt; ∫ (y : ℝ), Φx Φ (x' - y) t * g y) (∫ (y : ℝ), Φxx Φ (x - y) t * g y) x)\n  (Φ_solves_heat : ∀ (x t : ℝ), Φt Φ x t = κ * Φxx Φ x t) (x t : ℝ) :\n  deriv (fun τ =&gt; U Φ g x τ) t = κ * deriv (fun x' =&gt; deriv (fun x'' =&gt; U Φ g x'' t) x') x</code><span class=\"sep\"></span><code class=\"docstring\">**Abstract verification** that `U Φ g` satisfies the heat equation `u_t = κ u_xx`\nat a given point `(x₀, t₀)`, using only:\n* `swap_t`, `swap_x`, `swap_xx`: differentiation can be moved inside the integral;\n* `Φ_solves_heat`: the kernel solves `Φ_t = κ Φ_xx` pointwise in space at time `t₀`.\n\nNo explicit form of `Φ` is used.\n</code>",
+ "174": "<code>Chapter7.Φxx (Φ : ℝ → ℝ → ℝ) (x t : ℝ) : ℝ</code>",
+ "173": "<code>Chapter7.Φx (Φ : ℝ → ℝ → ℝ) (x t : ℝ) : ℝ</code>",
+ "172":
+ "<code>Chapter7.Φt (Φ : ℝ → ℝ → ℝ) (x t : ℝ) : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">Shorthands for the partial derivatives of `Φ`. </code>",
+ "171": "<code>ℝ → ℝ → ℝ</code>",
+ "170":
+ "<code>Chapter7.U (Φ : ℝ → ℝ → ℝ) (g : ℝ → ℝ) (x t : ℝ) : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">The solution candidate. </code>",
+ "17":
+ "<code class=\"docstring\">Normalize numerical expressions. Supports the operations `+` `-` `*` `/` `⁻¹` `^` and `%`\nover numerical types such as `ℕ`, `ℤ`, `ℚ`, `ℝ`, `ℂ` and some general algebraic types,\nand can prove goals of the form `A = B`, `A ≠ B`, `A &lt; B` and `A ≤ B`, where `A` and `B` are\nnumerical expressions. It also has a relatively simple primality prover.\n</code>",
+ "169":
+ "<code class=\"docstring\">A type universe. `Type ≡ Type 0`, `Type u ≡ Sort (u + 1)`. </code>",
+ "168":
+ "<code>deriv (fun x' =&gt; deriv (fun x'' =&gt; Φ α x'' t) x') x = c α t * (A * E + B * E)</code>",
+ "167":
+ "<code>deriv (fun x' =&gt; c α t * (-a α t * (2 * x')) * Real.exp (-a α t * x' ^ 2)) x = c α t * (A * E + B * E)</code>",
+ "166": "<code>α * B = 1 / (4 * α) * (1 / t ^ 2) * x ^ 2</code>",
+ "165": "<code>B = -a α t * (2 * x) * (-a α t * (2 * x))</code>",
+ "164": "<code>α * A = -(1 / (2 * t))</code>",
+ "163":
+ "<code>deriv (fun x' =&gt; deriv (fun x'' =&gt; Φ α x'' t) x') x = c α t * (A * E + -a α t * (2 * x) * (-a α t * (2 * x)) * E)</code>",
+ "162":
+ "<code>deriv (fun x' =&gt; c α t * (-a α t * (2 * x')) * Real.exp (-a α t * x' ^ 2)) x =\n  c α t * (A * E + -a α t * (2 * x) * (-a α t * (2 * x)) * E)</code>",
+ "161": "<code>A = -a α t * 2</code>",
+ "160":
+ "<code class=\"docstring\">Applies the first constructor when\nthe goal is an inductive type with exactly two constructors, or fails otherwise.\n```\nexample : True ∨ False := by\n  left\n  trivial\n```\n</code>",
+ "16": "<code>0 &lt; 4</code>",
+ "159":
+ "<code>Or (a b : Prop) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`Or a b`, or `a ∨ b`, is the disjunction of propositions. There are two\nconstructors for `Or`, called `Or.inl : a → a ∨ b` and `Or.inr : b → a ∨ b`,\nand you can use `match` or `cases` to destruct an `Or` assumption into the\ntwo cases.\n\n\nConventions for notations in identifiers:\n\n * The recommended spelling of `∨` in identifiers is `or`.\n\n * The recommended spelling of `\\/` in identifiers is `or` (prefer `∨` over `\\/`).</code>",
+ "158": "<code>(2 * x) ^ 2 = 4 * x ^ 2</code>",
+ "157":
+ "<code>-a α t * (2 * x) * (-a α t * (2 * x)) = a α t * (2 * x) * (a α t * (2 * x))</code>",
+ "156":
+ "<code>α * (-a α t * (2 * x) * (-a α t * (2 * x))) = 1 / (4 * α) * (1 / t ^ 2) * x ^ 2</code>",
+ "155":
+ "<code>Inv.inv.{u} {α : Type u} [self : Inv α] : α → α</code><span class=\"sep\"></span><code class=\"docstring\">`a⁻¹` computes the inverse of `a`.\nThe meaning of this notation is type-dependent. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `⁻¹` in identifiers is `inv`.</code>",
+ "154": "<code>2 ^ 2 = 4</code>",
+ "153": "<code>α * (-a α t * 2) = -(1 / (2 * t))</code>",
+ "152": "<code>a α t = 1 / (4 * α * t)</code>",
+ "151":
+ "<code>deriv (fun x' =&gt; deriv (fun x'' =&gt; Φ α x'' t) x') x =\n  c α t * (-a α t * 2 * E + -a α t * (2 * x) * (-a α t * (2 * x)) * E)</code>",
+ "150":
+ "<code>deriv (fun x' =&gt; c α t * (-a α t * (2 * x')) * Real.exp (-a α t * x' ^ 2)) x =\n  c α t * (-a α t * 2 * E + -a α t * (2 * x) * (-a α t * (2 * x)) * E)</code>",
+ "15":
+ "<code class=\"docstring\">The `have` tactic is for adding hypotheses to the local context of the main goal.\n* `have h : t := e` adds the hypothesis `h : t` if `e` is a term of type `t`.\n* `have h := e` uses the type of `e` for `t`.\n* `have : t := e` and `have := e` use `this` for the name of the hypothesis.\n* `have pat := e` for a pattern `pat` is equivalent to `match e with | pat =&gt; _`,\n  where `_` stands for the tactics that follow this one.\n  It is convenient for types that have only one applicable constructor.\n  For example, given `h : p ∧ q ∧ r`, `have ⟨h₁, h₂, h₃⟩ := h` produces the\n  hypotheses `h₁ : p`, `h₂ : q`, and `h₃ : r`.\n* The syntax `have (eq := h) pat := e` is equivalent to `match h : e with | pat =&gt; _`,\n  which adds the equation `h : e = pat` to the local context.\n\nThe tactic supports all the same syntax variants and options as the `have` term.\n</code>",
+ "149":
+ "<code>deriv (fun τ =&gt; Φ α x τ) t = -(1 / (2 * t)) * c α t * E + c α t * (1 / (4 * α) * (1 / t ^ 2) * x ^ 2) * E</code>",
+ "148": "<code>E = Real.exp (-a α t * x ^ 2)</code>",
+ "147":
+ "<code>Eq.trans.{u} {α : Sort u} {a b c : α} (h₁ : a = b) (h₂ : b = c) : a = c</code><span class=\"sep\"></span><code class=\"docstring\">Equality is transitive: if `a = b` and `b = c` then `a = c`.\n\nBecause this is in the `Eq` namespace, if you have variables or expressions\n`h₁ : a = b` and `h₂ : b = c`, you can use `h₁.trans h₂ : a = c` as shorthand\nfor `Eq.trans h₁ h₂`.\n\nFor more information: [Equality](https://lean-lang.org/theorem_proving_in_lean4/quantifiers_and_equality.html#equality)\n</code>",
+ "146": "<code>ℝ → ?_mvar.1220536</code>",
+ "145":
+ "<code>congrArg.{u, v} {α : Sort u} {β : Sort v} {a₁ a₂ : α} (f : α → β) (h : a₁ = a₂) : f a₁ = f a₂</code><span class=\"sep\"></span><code class=\"docstring\">Congruence in the function argument: if `a₁ = a₂` then `f a₁ = f a₂` for\nany (nondependent) function `f`. This is more powerful than it might look at first, because\nyou can also use a lambda expression for `f` to prove that\n`&lt;something containing a₁&gt; = &lt;something containing a₂&gt;`. This function is used\ninternally by tactics like `congr` and `simp` to apply equalities inside\nsubterms.\n\nFor more information: [Equality](https://lean-lang.org/theorem_proving_in_lean4/quantifiers_and_equality.html#equality)\n</code>",
+ "144":
+ "<code>deriv (fun x' =&gt; deriv (fun x'' =&gt; Φ α x'' t) x') x =\n  deriv (fun x' =&gt; c α t * (-a α t * (2 * x')) * Real.exp (-a α t * x' ^ 2)) x</code>",
+ "143":
+ "<code>deriv (fun x' =&gt; deriv (fun x'' =&gt; Φ α x'' t) x') x =\n  c α t * (-a α t * 2 * Real.exp (-a α t * x ^ 2) + -a α t * (2 * x) * (-a α t * (2 * x)) * Real.exp (-a α t * x ^ 2))</code>",
+ "142":
+ "<code>deriv (fun x' =&gt; c α t * (-a α t * (2 * x')) * Real.exp (-a α t * x' ^ 2)) x =\n  c α t * (-a α t * 2 * Real.exp (-a α t * x ^ 2) + -a α t * (2 * x) * (-a α t * (2 * x)) * Real.exp (-a α t * x ^ 2))</code>",
+ "141":
+ "<code>(fun x' =&gt; deriv (fun x'' =&gt; Φ α x'' t) x') = fun x' =&gt; c α t * (-a α t * (2 * x')) * Real.exp (-a α t * x' ^ 2)</code>",
+ "140":
+ "<code>HasDerivAt.deriv.{u, v} {𝕜 : Type u} [NontriviallyNormedField 𝕜] {F : Type v} [NormedAddCommGroup F] [NormedSpace 𝕜 F]\n  {f : 𝕜 → F} {f' : F} {x : 𝕜} (h : HasDerivAt f f' x) : deriv f x = f'</code>",
+ "14":
+ "<code>LT.lt.{u} {α : Type u} [self : LT α] : α → α → Prop</code><span class=\"sep\"></span><code class=\"docstring\">The less-than relation: `x &lt; y` \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `&lt;` in identifiers is `lt`.</code>",
+ "139":
+ "<code>deriv (fun τ =&gt; Φ α x τ) t =\n  -(1 / (2 * t)) * c α t * Real.exp (-a α t * x ^ 2) +\n    c α t * (1 / (4 * α) * (1 / t ^ 2) * x ^ 2) * Real.exp (-a α t * x ^ 2)</code>",
+ "138":
+ "<code>deriv.{u, v} {𝕜 : Type u} [NontriviallyNormedField 𝕜] {F : Type v} [AddCommGroup F] [Module 𝕜 F] [TopologicalSpace F]\n  (f : 𝕜 → F) (x : 𝕜) : F</code><span class=\"sep\"></span><code class=\"docstring\">Derivative of `f` at the point `x`, if it exists.  Zero otherwise.\n\nIf the derivative exists (i.e., `∃ f', HasDerivAt f f' x`), then\n`f x' = f x + (x' - x) • deriv f x + o(x' - x)` where `x'` converges to `x`.\n</code>",
+ "137":
+ "<code>Chapter7.heatKernel_solves_heat_eq (α : ℝ) (hα : 0 &lt; α) {t x : ℝ} (ht : 0 &lt; t) :\n  deriv (fun τ =&gt; Φ α x τ) t = α * deriv (fun x' =&gt; deriv (fun x'' =&gt; Φ α x'' t) x') x</code><span class=\"sep\"></span><code class=\"docstring\">The 1-D heat kernel solves `u_t = α u_xx` for `t&gt;0`, `α&gt;0`. </code>",
+ "136":
+ "<code>HasDerivAt (fun τ =&gt; Real.exp (-a α τ * x ^ 2)) (1 / (4 * α) * (1 / t ^ 2) * x ^ 2 * Real.exp (-a α t * x ^ 2)) t</code>",
+ "135":
+ "<code>HasDerivAt (fun τ =&gt; -a α τ * x ^ 2) (1 / (4 * α) * (1 / t ^ 2) * x ^ 2) t</code>",
+ "134":
+ "<code>HasDerivAt (fun τ =&gt; a α τ) (-(1 / (4 * α)) * (1 / t ^ 2)) t</code>",
+ "133":
+ "<code>HasDerivAt (fun τ =&gt; c α τ) (-(1 / (2 * t)) * c α t) t</code>",
+ "132":
+ "<code>Chapter7.hasDerivAt_Φ_t (α : ℝ) (hα : 0 &lt; α) {t x : ℝ} (ht : 0 &lt; t) :\n  HasDerivAt (fun τ =&gt; Φ α x τ)\n    (-(1 / (2 * t)) * c α t * Real.exp (-a α t * x ^ 2) +\n      c α t * (1 / (4 * α) * (1 / t ^ 2) * x ^ 2) * Real.exp (-a α t * x ^ 2))\n    t</code><span class=\"sep\"></span><code class=\"docstring\">Time derivative of `Φ(α,x,t)` (x is a parameter here). </code>",
+ "131":
+ "<code>HasDerivAt (fun x' =&gt; -a α t * (2 * x') * Real.exp (-a α t * x' ^ 2))\n  (-a α t * 2 * Real.exp (-a α t * x ^ 2) + -a α t * (2 * x) * (-a α t * (2 * x)) * Real.exp (-a α t * x ^ 2)) x</code>",
+ "130":
+ "<code>HasDerivAt.mul.{u, u_3} {𝕜 : Type u} [NontriviallyNormedField 𝕜] {x : 𝕜} {𝔸 : Type u_3} [NormedRing 𝔸]\n  [NormedAlgebra 𝕜 𝔸] {c d : 𝕜 → 𝔸} {c' d' : 𝔸} (hc : HasDerivAt c c' x) (hd : HasDerivAt d d' x) :\n  HasDerivAt (c * d) (c' * d x + c x * d') x</code>",
+ "13":
+ "<code class=\"docstring\">`by tac` constructs a term of the expected type by running the tactic(s) `tac`. </code>",
+ "129":
+ "<code>HasDerivAt (fun x' =&gt; -a α t * (2 * x') * Real.exp (-a α t * x' ^ 2))\n  (-a α t * 2 * Real.exp (-a α t * x ^ 2) + -a α t * (2 * x) * (-a α t * (2 * x) * Real.exp (-a α t * x ^ 2))) x</code>",
+ "128":
+ "<code>HasDerivAt (fun x' =&gt; -a α t * (2 * x')) (-a α t * 2) x</code>",
+ "127":
+ "<code>HAdd.hAdd.{u, v, w} {α : Type u} {β : Type v} {γ : outParam (Type w)} [self : HAdd α β γ] : α → β → γ</code><span class=\"sep\"></span><code class=\"docstring\">`a + b` computes the sum of `a` and `b`.\nThe meaning of this notation is type-dependent. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `+` in identifiers is `add`.</code>",
+ "126":
+ "<code>Chapter7.hasDerivAt_Φ_xx {α t x : ℝ} :\n  HasDerivAt (fun x' =&gt; c α t * (-a α t * (2 * x')) * Real.exp (-a α t * x' ^ 2))\n    (c α t *\n      (-a α t * 2 * Real.exp (-a α t * x ^ 2) + -a α t * (2 * x) * (-a α t * (2 * x)) * Real.exp (-a α t * x ^ 2)))\n    x</code><span class=\"sep\"></span><code class=\"docstring\">Second x-derivative of `Φ(α, x, t)` (t parameter). </code>",
+ "125":
+ "<code>Real.hasDerivAt_exp (x : ℝ) : HasDerivAt Real.exp (Real.exp x) x</code>",
+ "124":
+ "<code>HasDerivAt (fun x' =&gt; Real.exp (-a α t * x' ^ 2)) (-a α t * (2 * x) * Real.exp (-a α t * x ^ 2)) x</code>",
+ "123":
+ "<code>HasDerivAt (fun x' =&gt; -a α t * x' ^ 2) (-a α t * (2 * x)) x</code>",
+ "122":
+ "<code>hasDerivAt_pow.{u_1} {𝕜 : Type u_1} [NontriviallyNormedField 𝕜] (n : ℕ) (x : 𝕜) :\n  HasDerivAt (fun x =&gt; x ^ n) (↑n * x ^ (n - 1)) x</code>",
+ "121": "<code>HasDerivAt (fun x' =&gt; x' ^ 2) (2 * x) x</code>",
+ "120":
+ "<code>Chapter7.hasDerivAt_Φ_x {α t x : ℝ} :\n  HasDerivAt (fun x' =&gt; Φ α x' t) (c α t * (-a α t * (2 * x)) * Real.exp (-a α t * x ^ 2)) x</code><span class=\"sep\"></span><code class=\"docstring\">First x-derivative of the full kernel `Φ(α,x,t)` (t is a parameter). </code>",
+ "12": "<code>0 &lt; t</code>",
+ "119": "<code>Real.sq_sqrt {x : ℝ} (h : 0 ≤ x) : √x ^ 2 = x</code>",
+ "118": "<code>0 ≤ t * k</code>",
+ "117":
+ "<code>le_of_lt.{u_1} {α : Type u_1} [Preorder α] {a b : α} (hab : a &lt; b) : a ≤ b</code>",
+ "116": "<code>√(t * k) ^ 2 = t * k</code>",
+ "115":
+ "<code>-(k / (2 * √(t * k))) * (1 / √(t * k) ^ 2) = -(1 / (2 * t)) * (1 / √(t * k))</code>",
+ "114":
+ "<code>HasDerivAt (fun τ =&gt; 1 / √(τ * k)) (-(k / (2 * √(t * k))) * (1 / √(t * k) ^ 2)) t</code>",
+ "113": "<code>√(t * k) ≠ 0</code>",
+ "112":
+ "<code class=\"docstring\">The goal of `field_simp` is to reduce an expression in a field to an expression of the form `n / d`\nwhere neither `n` nor `d` contains any division symbol, just using the simplifier (with a carefully\ncrafted simpset named `field_simps`) to reduce the number of division symbols whenever possible by\niterating the following steps:\n\n- write an inverse as a division\n- in any product, move the division to the right\n- if there are several divisions in a product, group them together at the end and write them as a\n  single division\n- reduce a sum to a common denominator\n\nIf the goal is an equality, this simpset will also clear the denominators, so that the proof\ncan normally be concluded by an application of `ring`.\n\n`field_simp [hx, hy]` is a short form for\n`simp (disch := field_simp_discharge) [-one_div, -one_divp, -mul_eq_zero, hx, hy, field_simps]`\n\nNote that this naive algorithm will not try to detect common factors in denominators to reduce the\ncomplexity of the resulting expression. Instead, it relies on the ability of `ring` to handle\ncomplicated expressions in the next step.\n\nAs always with the simplifier, reduction steps will only be applied if the preconditions of the\nlemmas can be checked. This means that proofs that denominators are nonzero should be included. The\nfact that a product is nonzero when all factors are, and that a power of a nonzero number is\nnonzero, are included in the simpset, but more complicated assertions (especially dealing with sums)\nshould be given explicitly. If your expression is not completely reduced by the simplifier\ninvocation, check the denominators of the resulting expression and provide proofs that they are\nnonzero to enable further progress.\n\nTo check that denominators are nonzero, `field_simp` will look for facts in the context, and\nwill try to apply `norm_num` to close numerical goals.\n\nThe invocation of `field_simp` removes the lemma `one_div` from the simpset, as this lemma\nworks against the algorithm explained above. It also removes\n`mul_eq_zero : x * y = 0 ↔ x = 0 ∨ y = 0`, as `norm_num` can not work on disjunctions to\nclose goals of the form `24 ≠ 0`, and replaces it with `mul_ne_zero : x ≠ 0 → y ≠ 0 → x * y ≠ 0`\ncreating two goals instead of a disjunction.\n\nFor example,\n```lean\nexample (a b c d x y : ℂ) (hx : x ≠ 0) (hy : y ≠ 0) :\n    a + b / x + c / x^2 + d / x^3 = a + x⁻¹ * (y * b / y + (d / x + c) / x) := by\n  field_simp\n  ring\n```\n\nMoreover, the `field_simp` tactic can also take care of inverses of units in\na general (commutative) monoid/ring and partial division `/ₚ`, see `Algebra.Group.Units`\nfor the definition. Analogue to the case above, the lemma `one_divp` is removed from the simpset\nas this works against the algorithm. If you have objects with an `IsUnit x` instance like\n`(x : R) (hx : IsUnit x)`, you should lift them with\n`lift x to Rˣ using id hx; rw [IsUnit.unit_of_val_units] clear hx`\nbefore using `field_simp`.\n\nSee also the `cancel_denoms` tactic, which tries to do a similar simplification for expressions\nthat have numerals in denominators.\nThe tactics are not related: `cancel_denoms` will only handle numeric denominators, and will try to\nentirely remove (numeric) division from the expression by multiplying by a factor.\n</code>",
+ "111":
+ "<code>HasDerivAt.comp.{u, u_1} {𝕜 : Type u} [NontriviallyNormedField 𝕜] (x : 𝕜) {𝕜' : Type u_1} [NontriviallyNormedField 𝕜']\n  [NormedAlgebra 𝕜 𝕜'] {h : 𝕜 → 𝕜'} {h₂ : 𝕜' → 𝕜'} {h' h₂' : 𝕜'} (hh₂ : HasDerivAt h₂ h₂' (h x))\n  (hh : HasDerivAt h h' x) : HasDerivAt (h₂ ∘ h) (h₂' * h') x</code><span class=\"sep\"></span><code class=\"docstring\">The chain rule.\n\nNote that the function `h₂` is a function on an algebra. If you are looking for the chain rule\nwith `h₂` taking values in a vector space, use `HasDerivAt.scomp`. </code>",
+ "110":
+ "<code>mul_ne_zero.{u_1} {M₀ : Type u_1} [Mul M₀] [Zero M₀] [NoZeroDivisors M₀] {a b : M₀} (ha : a ≠ 0) (hb : b ≠ 0) :\n  a * b ≠ 0</code>",
+ "11": "<code>0 &lt; α</code>",
+ "109":
+ "<code>Real.hasDerivAt_sqrt {x : ℝ} (hx : x ≠ 0) : HasDerivAt (fun x =&gt; √x) (1 / (2 * √x)) x</code>",
+ "108":
+ "<code>HasDerivAt ((fun x =&gt; √x) ∘ fun τ =&gt; τ * k) (1 / (2 * √(t * k)) * k) t</code>",
+ "107": "<code>HasDerivAt (fun τ =&gt; √(τ * k)) (k / (2 * √(t * k))) t</code>",
+ "106":
+ "<code>HasDerivAt.mul_const.{u, u_3} {𝕜 : Type u} [NontriviallyNormedField 𝕜] {x : 𝕜} {𝔸 : Type u_3} [NormedRing 𝔸]\n  [NormedAlgebra 𝕜 𝔸] {c : 𝕜 → 𝔸} {c' : 𝔸} (hc : HasDerivAt c c' x) (d : 𝔸) : HasDerivAt (fun y =&gt; c y * d) (c' * d) x</code>",
+ "105":
+ "<code>hasDerivAt_id.{u} {𝕜 : Type u} [NontriviallyNormedField 𝕜] (x : 𝕜) : HasDerivAt id 1 x</code>",
+ "104":
+ "<code>one_mul.{u} {M : Type u} [MulOneClass M] (a : M) : 1 * a = a</code>",
+ "103":
+ "<code>id.{u} {α : Sort u} (a : α) : α</code><span class=\"sep\"></span><code class=\"docstring\">The identity function. `id` takes an implicit argument `α : Sort u`\n(a type in any universe), and an argument `a : α`, and returns `a`.\n\nAlthough this may look like a useless function, one application of the identity\nfunction is to explicitly put a type on an expression. If `e` has type `T`,\nand `T'` is definitionally equal to `T`, then `@id T' e` typechecks, and Lean\nknows that this expression has type `T'` rather than `T`. This can make a\ndifference for typeclass inference, since `T` and `T'` may have different\ntypeclass instances on them. `show T' from e` is sugar for an `@id T' e`\nexpression.\n</code>",
+ "102": "<code>HasDerivAt (fun τ =&gt; τ * k) k t</code>",
+ "101": "<code>k ≠ 0</code>",
+ "100": "<code>0 &lt; k</code>",
+ "10":
+ "<code>Chapter7.heatKernel_pos (α t : ℝ) {x : ℝ} (hα : 0 &lt; α) (ht : 0 &lt; t) : 0 &lt; heatKernel α x t</code><span class=\"sep\"></span><code class=\"docstring\">For `α &gt; 0` and `t &gt; 0`, the heat kernel is strictly positive for every `x`. </code>",
+ "1":
+ "<code class=\"docstring\">Declares one or more typed variables, or modifies whether already-declared variables are\n  implicit.\n\nIntroduces variables that can be used in definitions within the same `namespace` or `section` block.\nWhen a definition mentions a variable, Lean will add it as an argument of the definition. This is\nuseful in particular when writing many definitions that have parameters in common (see below for an\nexample).\n\nVariable declarations have the same flexibility as regular function parameters. In particular they\ncan be [explicit, implicit][binder docs], or [instance implicit][tpil classes] (in which case they\ncan be anonymous). This can be changed, for instance one can turn explicit variable `x` into an\nimplicit one with `variable {x}`. Note that currently, you should avoid changing how variables are\nbound and declare new variables at the same time; see [issue 2789] for more on this topic.\n\nIn *theorem bodies* (i.e. proofs), variables are not included based on usage in order to ensure that\nchanges to the proof cannot change the statement of the overall theorem. Instead, variables are only\navailable to the proof if they have been mentioned in the theorem header or in an `include` command\nor are instance implicit and depend only on such variables.\n\nSee [*Variables and Sections* from Theorem Proving in Lean][tpil vars] for a more detailed\ndiscussion.\n\n[tpil vars]:\nhttps://lean-lang.org/theorem_proving_in_lean4/dependent_type_theory.html#variables-and-sections\n(Variables and Sections on Theorem Proving in Lean) [tpil classes]:\nhttps://lean-lang.org/theorem_proving_in_lean4/type_classes.html (Type classes on Theorem Proving in\nLean) [binder docs]:\nhttps://leanprover-community.github.io/mathlib4_docs/Lean/Expr.html#Lean.BinderInfo (Documentation\nfor the BinderInfo type) [issue 2789]: https://github.com/leanprover/lean4/issues/2789 (Issue 2789\non github)\n\n## Examples\n\n```lean\nsection\n  variable\n    {α : Type u}      -- implicit\n    (a : α)           -- explicit\n    [instBEq : BEq α] -- instance implicit, named\n    [Hashable α]      -- instance implicit, anonymous\n\n  def isEqual (b : α) : Bool :=\n    a == b\n\n  #check isEqual\n  -- isEqual.{u} {α : Type u} (a : α) [instBEq : BEq α] (b : α) : Bool\n\n  variable\n    {a} -- `a` is implicit now\n\n  def eqComm {b : α} := a == b ↔ b == a\n\n  #check eqComm\n  -- eqComm.{u} {α : Type u} {a : α} [instBEq : BEq α] {b : α} : Prop\nend\n```\n\nThe following shows a typical use of `variable` to factor out definition arguments:\n\n```lean\nvariable (Src : Type)\n\nstructure Logger where\n  trace : List (Src × String)\n#check Logger\n-- Logger (Src : Type) : Type\n\nnamespace Logger\n  -- switch `Src : Type` to be implicit until the `end Logger`\n  variable {Src}\n\n  def empty : Logger Src where\n    trace := []\n  #check empty\n  -- Logger.empty {Src : Type} : Logger Src\n\n  variable (log : Logger Src)\n\n  def len :=\n    log.trace.length\n  #check len\n  -- Logger.len {Src : Type} (log : Logger Src) : Nat\n\n  variable (src : Src) [BEq Src]\n\n  -- at this point all of `log`, `src`, `Src` and the `BEq` instance can all become arguments\n\n  def filterSrc :=\n    log.trace.filterMap\n      fun (src', str') =&gt; if src' == src then some str' else none\n  #check filterSrc\n  -- Logger.filterSrc {Src : Type} (log : Logger Src) (src : Src) [inst✝ : BEq Src] : List String\n\n  def lenSrc :=\n    log.filterSrc src |&gt;.length\n  #check lenSrc\n  -- Logger.lenSrc {Src : Type} (log : Logger Src) (src : Src) [inst✝ : BEq Src] : Nat\nend Logger\n```\n\nThe following example demonstrates availability of variables in proofs:\n```lean\nvariable\n  {α : Type}    -- available in the proof as indirectly mentioned through `a`\n  [ToString α]  -- available in the proof as `α` is included\n  (a : α)       -- available in the proof as mentioned in the header\n  {β : Type}    -- not available in the proof\n  [ToString β]  -- not available in the proof\n\ntheorem ex : a = a := rfl\n```\nAfter elaboration of the proof, the following warning will be generated to highlight the unused\nhypothesis:\n```\nincluded section variable '[ToString α]' is not used in 'ex', consider excluding it\n```\nIn such cases, the offending variable declaration should be moved down or into a section so that\nonly theorems that do depend on it follow it until the end of the section.\n</code>",
+ "0":
+ "<code class=\"docstring\">`namespace &lt;id&gt;` opens a section with label `&lt;id&gt;` that influences naming and name resolution inside\nthe section:\n* Declarations names are prefixed: `def seventeen : ℕ := 17` inside a namespace `Nat` is given the\n  full name `Nat.seventeen`.\n* Names introduced by `export` declarations are also prefixed by the identifier.\n* All names starting with `&lt;id&gt;.` become available in the namespace without the prefix. These names\n  are preferred over names introduced by outer namespaces or `open`.\n* Within a namespace, declarations can be `protected`, which excludes them from the effects of\n  opening the namespace.\n\nAs with `section`, namespaces can be nested and the scope of a namespace is terminated by a\ncorresponding `end &lt;id&gt;` or the end of the file.\n\n`namespace` also acts like `section` in delimiting the scope of `variable`, `open`, and other scoped commands.\n</code>"}
