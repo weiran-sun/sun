@@ -54,4 +54,4 @@ I also enjoy working with researchers in other disciplines and providing mathema
 - <small>Aug 18-Dec 19 2025: Kinetic Theory: Novel Statistical, Stochastic and Analytical Methods [Link](https://www.slmath.org/programs/357), SLMath (former MSRI), Berkeley, CA</small>
 
 
-<small><em>Feature image: [Sunset outside the SFU Math department](https://weiran-sun.github.io/sun/assets/images/Math-Sunset.png)</em></small>  
+<small><em>Feature image: [Sunset outside the SFU Math department](https://weiran-sun.github.io/assets/images/Math-Sunset.png)</em></small>  
