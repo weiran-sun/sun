@@ -1,7 +1,7 @@
 ---
 title: Research Group
 feature_text: |
-feature_image: "https://weiran-sun.github.io/sun/assets/images/BC-Ferry.jpg"
+feature_image: "https://weiran-sun.github.io/assets/images/BC-Ferry.jpg"
 excerpt: "Research Group"
 ---
 
