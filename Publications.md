@@ -1,7 +1,7 @@
 ---
 title: Publications
 feature_text: |
-feature_image: "https://weiran-sun.github.io/sun/assets/images/Office.png"
+feature_image: "https://weiran-sun.github.io/assets/images/Office.png"
 excerpt: "List of Publications"
 ---
 
